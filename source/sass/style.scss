@@ -1,0 +1,12 @@
+//----- Библиотеки -----//
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "../../node_modules/normalize.css/normalize.css";
+
+//----- Глобальные стили -----//
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+
+//----- Основные стили -----//
+@import "blocks/main-header.scss";
