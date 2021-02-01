@@ -1,0 +1,37 @@
+// screen-resolution
+$container-max-width: 1200px;
+$desktop-width-middle: 1440px;
+$desktop-width: 1200px;
+$tablet-width: 1024px;
+$mobile-width: 767px;
+$mobile-width-middle: 480px;
+$mobile-width-min: 375px;
+
+//padding
+$desktop-padding: 0 30px;
+$tablet-padding: 0 15px;
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+//fonts
+$Geometria: "Geometria", arial, sans-serif;
+$Geometria-Bold: "Geometria-Bold", arial, sans-serif;
+
+//font-weight
+$Normal: 400;
+$Bold: 700;
+
+//colors
+$Black: #000000;
+$White: #ffffff;
+$Gray: #343538;
+$White-gray: #f2f2f2;
+$Dark-red: #ce0000;
+$Orange: #e25f27;
+$Gray-rgba: rgba(52, 53, 56, 0.7);
+$Orange-rgba: rgba(226, 95, 39, 0.7);
+
+//gradients
+$Orange-gradient: linear-gradient(90.44deg, #fb912f -3.41%, #dc5126 100.03%);

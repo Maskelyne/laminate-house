@@ -1,0 +1,38 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background-color: transparent;
+  color: inherit;
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin desktop-width {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet-width {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile-width {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
