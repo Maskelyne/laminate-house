@@ -1,0 +1,121 @@
+/*------------ 15. Brand logo style --------------*/
+
+
+.brand-logo-active.owl-carousel {
+    .owl-item {
+        .single-brand-logo {
+            text-align: center;
+            img {
+                display: inline-block;
+                width: auto;
+            }
+        }
+    }
+}
+.brand-logo {
+    @media #{$xs-layout} {
+        &.pb-50{
+            padding-bottom: 25px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.pb-55{
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.brand-logo {
+    @media #{$xs-layout} {
+        &.brand-logo-padding {
+            &.pb-50 {
+                padding-bottom: 50px;
+            }
+        }
+        
+    }
+}
+
+.brand-logo {
+    .brand-logo-top {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                flex: 0 0 234px;
+                text-align: center;
+                img {
+                    @media #{$md-layout} {
+                        width: 100%;
+                    }
+                    @media #{$xs-layout} {
+                        width: auto;
+                    }
+                }
+                margin-bottom: 30px;
+                @media #{$lg-layout} {
+                    flex: 0 0 180px;
+                }
+                @media #{$md-layout} {
+                    flex: 0 0 130px;
+                }
+            }
+        }
+    }
+    .brand-logo-bottom {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                flex: 0 0 290px;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 30px;
+                img {
+                    @media #{$md-layout} {
+                        width: 100%;
+                    }
+                    @media #{$xs-layout} {
+                        width: auto;
+                    }
+                }
+                @media #{$lg-layout} {
+                    flex: 0 0 220px;
+                }
+                @media #{$md-layout} {
+                    flex: 0 0 165px;
+                }
+                @media #{$sm-layout} {
+                    flex: 0 0 205px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

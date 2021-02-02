@@ -1,0 +1,70 @@
+/*--------- 18. Notification style  -----------*/
+
+.notification-section {
+    @media #{$md-layout} {
+        &.pt-15 {
+            padding-top: 0px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.pt-15 {
+            padding-top: 0px;
+        }
+    }
+    .notification-wrapper {
+        position: relative;
+        border: 1px solid #b8dee8;
+        padding: 23px 15px;
+        .notification-content {
+            h5 {
+                font-size: 18px;
+                margin: 0;
+                span {
+                    font-style: italic;
+                    font-family: $playfairdisplay;
+                }
+                a {
+                    font-size: 12px;
+                    font-weight: 700;
+                    border-bottom: 1px solid;
+                    vertical-align: middle;
+                    line-height: 1;
+                    display: inline-block;
+                }
+            }
+        }
+        .notification-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            @media #{$xs-layout} {
+                right: 5px;
+            }
+            button {
+                border: none;
+                background: transparent;
+                padding: 0;
+                font-size: 20px;
+                color: #5e7f96;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        &.notification-img-1 {
+            background-image: url("../../assets/img/bg/bg-1.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+
+
+
+
+
+
+

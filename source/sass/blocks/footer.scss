@@ -1,0 +1,218 @@
+/*------- 8. Footer style -------*/
+
+.footer-custom-col {
+	flex: 0 0 16.66667%;
+	max-width: 16.66667%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media #{$md-layout} {
+        flex: 0 0 33.333%;
+	    max-width: 33.333%;
+    }
+    @media #{$xs-layout} {
+        flex: 0 0 100%;
+	    max-width: 100%;
+    }
+    @media #{$sm-layout} {
+        flex: 0 0 33.333%;
+	    max-width: 33.333%;
+    }
+}
+
+
+
+
+.footer-widget {
+    &.footer-about {
+        p {
+            font-size: 12px;
+            font-family: $Geometria;
+            width: 90%;
+            margin: 15px 0 14px;
+        }
+        .footer-social {
+            display: flex;
+            a {
+                font-size: 12px;
+                margin: 0 30px 0 0;
+                color: #8a8a8a;
+                &:last-child {
+                    margin: 0 0px 0 0;
+                }
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    .footer-title {
+        h3 {
+            font-weight: 700;
+            font-size: 16px;
+            margin: 0 0 30px;
+            line-height: 1;
+            @media #{$sm-layout} {
+                margin: 0 0 15px;
+            }
+            @media #{$xs-layout} {
+                margin: 0 0 18px;
+            }
+        }
+    }
+    .footer-list {
+        ul {
+            li {
+                margin-bottom: 20px;
+                @media #{$sm-layout} {
+                    margin: 0 0 10px;
+                }
+                @media #{$xs-layout} {
+                    margin: 0 0 8px;
+                }
+                a {
+                    color: #8a8a8a;
+                    font-size: 12px;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.footer-white {
+        .footer-title {
+            h3 {
+                color: #fff;
+            }
+        }
+    }
+    &.footer-map {
+        #footer-map  {
+            height: 221px;
+        }
+    }
+    &.copyright-2{
+        p {
+            font-size: 10px;
+            color: #343538;
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            text-transform: uppercase;
+            a {
+                color: #343538;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+            @media #{$xs-layout} {
+                text-align: center;
+            }
+        }
+    }
+    &.footer-social-2 {
+        display: flex;
+        justify-content: center;
+        a {
+            font-size: 10px;
+            margin: 0 15px 0 15px;
+            color: #343538;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    &.footer-address {
+        p {
+            font-size: 10px;
+            color: #343538;
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: right;
+            @media #{$xs-layout} {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.copyright {
+    p {
+        font-size: 12px;
+        color: #8a8a8a;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        text-transform: uppercase;
+        a {
+            color: #8a8a8a;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    &.pt-40 {
+        @media #{$xs-layout} {
+            padding-top: 15px;
+        }
+    }
+}
+
+.home-9-footer {
+    .footer-custom-col {
+        @media #{$lg-layout} {
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

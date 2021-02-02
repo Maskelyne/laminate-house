@@ -1,0 +1,63 @@
+$container-max-width: 1200px;
+$desktop-width-middle: 1440px;
+$desktop-width: 1200px;
+$tablet-width: 1024px;
+$mobile-width: 767px;
+$mobile-width-middle: 480px;
+$mobile-width-min: 375px;
+
+//fonts
+$Geometria: "Geometria", arial, sans-serif;
+$Geometria-Bold: "Geometria-Bold", arial, sans-serif;
+$playfairdisplay: 'Playfair Display', serif;
+$meddon: 'Meddon', cursive;
+$nothingyoucoulddo: 'Nothing You Could Do', cursive;
+$robotocondensed: 'Roboto Condensed', sans-serif;
+
+//font-weight
+$Normal: 400;
+$Bold: 700;
+
+// text Colors ---------------
+
+$white: #ffffff;
+$black: #000000;
+$grey: #f6f7f8;
+$red: #f6f7f8;
+$green: #f6f7f8;
+$Gray: #343538;
+$White-gray: #f2f2f2;
+$Dark-red: #ce0000;
+$Orange: #e25f27;
+$Gray-rgba: rgba(52, 53, 56, 0.7);
+$Orange-rgba: rgba(226, 95, 39, 0.7);
+
+
+// bg Colors ---------------
+
+$bg-white: #ffffff;
+$bg-black: #000000;
+$bg-grey: #f6f6f8;
+$bg-purple: #f0e0ff;
+
+
+// Theme Color
+$theme-color: #dcb86c;
+
+
+
+// Responsive Variables
+$xx-layout : 'only screen and (min-width: 1366px) and (max-width: 1600px)';
+$xl-layout : 'only screen and (min-width: 1200px) and (max-width: 1365px)';
+$lg-layout : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs-layout:'only screen and (max-width: 767px)';
+$sm-layout: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+
+
+
+
+
+
+

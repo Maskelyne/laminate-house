@@ -1,0 +1,64 @@
+/*---------- 28. Error 404 page ------------*/
+
+.error-content {
+    margin: 0 17px;
+    @media #{$md-layout} {
+        margin: 0 0px;
+    }
+    img {
+        width: 100%;
+    }
+    .back-home {
+        margin-top: 30px;
+        a {
+            display: inline-block;
+            line-height: 1;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 23px 50px 24px; 
+            background-color: #343538;
+            color: #fff;
+            &:hover {
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+
+.error-area {
+    @media #{$xs-layout} {
+        &.pb-150 {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

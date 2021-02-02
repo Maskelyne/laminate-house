@@ -1,0 +1,68 @@
+/*------- 7. Feature style ---------*/
+
+.feature-wrap {
+    i {
+        font-size: 32px;
+        color: #343538;
+        &.bg-white-icon {
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            background-color: #fff;
+            border-radius: 100%;
+            font-size: 30px;
+        }
+    }
+    h5 {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 9px 0 6px;
+        &.magin-incress {
+            margin: 17px 0 6px;
+        }
+    }
+    p {
+        margin: 0;
+        font-style: italic;
+    }
+}
+
+.feature-area {
+    &.pb-30 {
+        @media #{$xs-layout} {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.feature-wrap-2 {
+    padding: 35px 10px;
+    h5 {
+        font-size: 18px;
+        margin: 0;
+        line-height: 1;
+        @media #{$lg-layout} {
+            font-size: 15px;
+        }
+        @media #{$xs-layout} {
+            line-height: 25px;
+        }
+        span {
+            font-family: $playfairdisplay;
+            font-style: italic;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
