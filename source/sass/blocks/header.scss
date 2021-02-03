@@ -1,12 +1,15 @@
 /*----- 2. Header style  -----*/
 
 .header-area {
-    @media #{$md-layout} {
-        display: none;
+  @include tablet-width {
+    display: none;
+  }
+
+  .logo {
+    img {
+      max-width: 240px;
     }
-    @media #{$xs-layout} {
-        display: none;
-    }
+  }
 }
 
 .sticky-bar.stick {
@@ -48,19 +51,15 @@
                 position: relative;
                 > a {
                     display: block;
-                    line-height: 30px;
                     color: #343538;
-                    padding: 5px 25px;
-                    font-weight: 700;
+                    padding: 5px 15px;
+                    font-family: $Geometria-Bold;
                     text-transform: uppercase;
-                    letter-spacing: 1px;
-                    font-size: 12px;
+                    font-size: 14px;
+                    line-height: 18px;
                     transition: background .3s ease-in-out,color .3s ease-in-out,border-color .3s ease-in-out;
-                    @media #{$xl-layout} {
-                        padding: 5px 18px;
-                    }
                     @media #{$lg-layout} {
-                        padding: 5px 10px;
+                        padding: 5px 3px;
                     }
                     .tip {
                         color: #fff;
@@ -88,28 +87,26 @@
                     }
                     &::after {
                         content: "";
-                        height: 3px;
+                        height: 1px;
+                        top: 0;
                         right: 15px;
                         left: auto;
                         width: 0;
                         position: absolute;
                         transition: width 300ms ease-out;
-                        background-color: #dcb86c;
+                        background-color: #e25f27;
                     }
                 }
                 &.active > a::after, &:hover > a::after {
-                    left: 25px;
+                    left: 15px;
                     right: auto;
-                    width: calc(100% - 50px);
+                    width: calc(100% - 30px);
                     transition: width 300ms ease-in;
-                    @media #{$xl-layout} {
-                        left: 18px;
-                        width: calc(100% - 36px);
-                    }
-                    @media #{$lg-layout} {
-                        left: 10px;
-                        width: calc(100% - 20px);
-                    }
+
+                  @include desktop-width {
+                    left: 3px;
+                    width: calc(100% - 7px);
+                  }
                 }
                 &:hover > a::before {
                     content: "";
@@ -204,15 +201,6 @@
                         left: 0px;
                         &.dropdown-width-hm4-1 {
                             left: 0px;
-                        }
-                        @media #{$xx-layout} {
-                            left: -262px;
-                        }
-                        @media #{$xl-layout} {
-                            left: -250px;
-                        }
-                        @media #{$lg-layout} {
-                            left: -200px;
                         }
                         ul {
                             li {
@@ -370,9 +358,10 @@
                 &:hover .dropdown-menu-style {
                     visibility: visible;
                     opacity: 1;
-                    margin-top: 30px;
+                    margin-top: 10px;
                     z-index: 999;
                     transition: margin .1s linear .3s,visibility .1s linear .3s,opacity .1s linear .3s;
+
                     &.dropdown-width-hm4-1 {
                         margin-top: 0px;
                     }
@@ -1618,7 +1607,7 @@
                 display: block;
                 position: relative;
                 span {
-                    font-weight: 700;
+                    font-family: $Geometria-Bold;
                     font-size: 26px;
                     color: #fff;
                     text-transform: capitalize;
@@ -2441,18 +2430,13 @@
 
 .header-small-mobile {
     display: none;
-    @media #{$lg-layout} {
-        &.block-for-sidemenu {
-            display: block;
-            padding: 0px 25px;
-        }
-    }
-    @media #{$md-layout} {
+
+    @include tablet-width {
+      display: block;
+      &.block-for-sidemenu {
         display: block;
         padding: 0px 25px;
-    }
-    @media #{$xs-layout} {
-        display: block;
+      }
     }
     .header-right-wrap {
         .same-style {

@@ -19,6 +19,12 @@
   }
 }
 
+@mixin desktop-width-middle {
+  @media (max-width: $desktop-width-middle) {
+    @content;
+  }
+}
+
 @mixin desktop-width {
   @media (max-width: $desktop-width) {
     @content;

@@ -20,7 +20,6 @@
     }
 
     strong {
-      padding-left: 20px;
       font-family: $Geometria-Bold;
       font-size: 16px;
       line-height: 20px;
@@ -28,6 +27,10 @@
       position: relative;
       display: inline-block;
       padding-bottom: 15px;
+
+      @include mobile-width {
+        padding-left: 20px;
+      }
 
       &::before {
         width: 10px;
@@ -47,6 +50,7 @@
 
     a {
       margin: 10px 0;
+      font-family: $Geometria;
       font-size: 16px;
       line-height: 20px;
       color: #343538;
@@ -80,6 +84,16 @@
     }
   }
 
+  .delivery__image {
+    display: flex;
+    gap: 0 20px;
+    margin-bottom: 20px;
+
+    img {
+      max-width: 100px;
+    }
+  }
+
   .delivery__inner-box-1 {
     padding-left: 30px;
 
@@ -93,10 +107,6 @@
 
     @include mobile-width {
       padding-right: 0;
-    }
-
-    p {
-      color: rgba(52, 53, 56, 0.7);
     }
   }
 
@@ -122,5 +132,105 @@
     img {
       max-width: 65px;
     }
+  }
+}
+
+.delivery__box-info {
+  background-image: url("../img/png/delivery-bckg.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+
+  @include desktop-width-middle {
+    background-position: 80%;
+  }
+
+  @include desktop-width {
+    background-position: 74%;
+  }
+
+  @include tablet-width {
+    background-image: none;
+    background-color: rgba(204, 204, 204, 0.2);
+  }
+
+  .delivery__box-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
+    padding: 30px 30px;
+  }
+
+  .delivery__text {
+    max-width: 700px;
+    font-family: $Geometria;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include desktop-width {
+      max-width: 600px;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      color: #343538;
+      font-family: $Geometria-Bold;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: none;
+
+      img {
+        max-width: 60px;
+      }
+    }
+
+    p {
+      color: $Gray-rgba;
+      margin: 0 0 10px 0;
+    }
+
+    strong {
+      margin: 10px 0 10px 0;
+      display: block;
+      font-family: $Geometria-Bold;
+    }
+
+    a {
+      max-width: 200px;
+      color: $Orange;
+      display: flex;
+      flex-direction: column;
+      gap: 0 10px;
+    }
+
+    ol {
+      padding-left: 15px;
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+    }
+
+    .delivery__text-link {
+      display: inline-block;
+      text-decoration: underline;
+    }
+  }
+}
+
+.text-black {
+  p {
+    color: #343538;
+  }
+}
+
+.text-gray {
+  p {
+    color: rgba(52, 53, 56, 0.7);
   }
 }

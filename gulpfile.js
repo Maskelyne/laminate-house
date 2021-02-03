@@ -63,7 +63,11 @@ const styles = () => {
 };
 
 const bootstrapJs = () => {
-  return src('source/js/bootstrap.min.js')
+  return src(['source/js/bootstrap.min.js',
+  'source/js/popper.min.js',
+  'source/js/main-1.js',
+  'source/js/plugins.js',
+  'source/js/jquery-1.12.4.min.js'])
     .pipe(dest('dev/assets/js'))
 }
 
