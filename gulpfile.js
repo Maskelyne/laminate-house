@@ -107,7 +107,7 @@ const watchFiles = () => {
   watch('source/sass/**/*.scss', styles);
   watch('source/js/**/*.js', scripts);
   watch('source/img/**/*.jpg', imgToBuild);
-  watch('source/img/**/*.jpeg', imgToBuild);
+  watch('source/img/**/*.svg', imgToBuild);
   watch('source/img/**/*.png', imgToBuild);
 }
 
@@ -120,6 +120,7 @@ exports.scripts = scripts;
 exports.watchFiles = watchFiles;
 exports.fontsDev = fontsDev;
 exports.clean = clean;
+exports.imgToBuild = imgToBuild;
 
 exports.development = series(clean, parallel(fontsDev, htmlDev, bootstrapCss, styles, bootstrapJs, popper, scripts, imgToBuild), watchFiles);
 

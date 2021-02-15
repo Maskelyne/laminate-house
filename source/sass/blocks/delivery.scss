@@ -1,3 +1,50 @@
+.delivery-title {
+  padding: 70px 0;
+  margin-bottom: 45px;
+
+  h2 {
+    font-family: $Geometria-Bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.breadcrumbs {
+  ul {
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+  }
+
+  li:last-child {
+    a {
+      margin-left: 25px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+    position: relative;
+    font-family: $Geometria;
+    font-size: 14px;
+    line-height: 20px;
+
+    &::after {
+      position: absolute;
+      content: "/";
+      top: 0;
+      right: -16px;
+    }
+  }
+}
+
 .delivery__wrapper {
   width: 100%;
   max-width: 1200px;

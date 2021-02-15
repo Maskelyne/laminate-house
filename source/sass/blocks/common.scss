@@ -92,12 +92,9 @@ ul {
     background-size: cover;
 }
 
-
-
 a:hover {
     color: $Orange;
 }
-
 
 /*************************
   Basic margin padding
@@ -1271,7 +1268,7 @@ a:hover {
 -----------------------------------------*/
 
 .border-top-1 {
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid $Orange;
 }
 .border-top-2 {
     border-top: 1px solid #e8e8e8;
