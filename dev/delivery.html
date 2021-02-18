@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Build 2.0</title>
-<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">
   <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/icons.min.css">
+  <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
@@ -156,53 +157,6 @@
     </form>
   </div>
 </div>
-<!-- aside start -->
-<div class="header-aside-active">
-  <div class="header-aside-wrap">
-    <a class="aside-close"><i class="negan-icon-simple-close"></i></a>
-    <div class="header-aside-top">
-      <div class="aside-logo">
-        <a href="index.html">
-          <img alt="" src="assets/img/logo/logo.png">
-        </a>
-      </div>
-      <p>Curabitur placerat urna augue, id luctus sem imperdiet id. Nunc congue ac libero ut lacinia. In ultrices elementum ipsum, in tempus enim accumsan..</p>
-      <div class="aside-social">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-      </div>
-    </div>
-    <div class="header-aside-middle">
-      <div class="lang-curr-style">
-        <a href="#">Language <span>English <i class="fa fa-angle-down"></i></span></a>
-        <ul>
-          <li><a href="#">English</a></li>
-          <li><a href="#">France</a></li>
-          <li><a href="#">German</a></li>
-        </ul>
-      </div>
-      <div class="lang-curr-style">
-        <a href="#">Currency <span>USD <i class="fa fa-angle-down"></i></span></a>
-        <ul>
-          <li><a href="#">USD</a></li>
-          <li><a href="#">EUR</a></li>
-          <li><a href="#">GBP</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="header-aside-bottom">
-      <ul>
-        <li class="phn"><span>(+61 2) 9251 5600</span></li>
-        <li class="email"><span><a href="#">info@example.com</a></span></li>
-        <li class="address"><span>PO Box 16122 Collins Street West Victoria 8007 Australia</span></li>
-      </ul>
-    </div>
-    <div class="header-aside-copyright">
-      <p>© 2019 <a href="#">Negan</a>. All Rights Reserved</p>
-    </div>
-  </div>
-</div>
 <!-- mini cart start -->
 <div class="sidebar-cart-active">
   <div class="sidebar-cart-all">
@@ -292,6 +246,15 @@
           <p>Вы можете оплатить покупку при доставке, рассчитываясь с курьером наличными деньгами</p>
         </div>
         <div class="delivery__inner-box-2 text-gray">
+          <strong>Система «Расчет» (ЕРИП)</strong>
+          <p>Вы можете оплатить товар через систему ”Расчет“ (ЕРИП), в любом удобном для Вас пункте банковского обслуживания</p>
+        </div>
+        <div class="delivery__inner-box-1 text-gray">
+          <strong>Безналичный расчёт</strong>
+          <p>-для физ.лиц (оплата через банк) </p>
+          <p>-для юридических лиц (счет с ндс)</p>
+        </div>
+        <div class="delivery__inner-box-2 text-gray">
           <strong>Банковская карта</strong>
           <p>-оплата через теминал</p>
           <p>-оплата карой “Покупок”</p>
@@ -300,15 +263,6 @@
             <img src="assets/img/jpg/image-bgbp.jpg" width="80" height="50" alt="Белгазпромбанк">
             <img src="assets/img/jpg/image-mtb.jpg" width="80" height="50" alt="МТБанк">
           </div>
-        </div>
-        <div class="delivery__inner-box-1 text-gray">
-          <strong>Безналичный расчёт</strong>
-          <p>-для физ.лиц (оплата через банк) </p>
-          <p>-для юридических лиц (счет с ндс)</p>
-        </div>
-        <div class="delivery__inner-box-2 text-gray">
-          <strong>Система «Расчет» (ЕРИП)</strong>
-          <p>Вы можете оплатить товар через систему ”Расчет“ (ЕРИП), в любом удобном для Вас пункте банковского обслуживания</p>
         </div>
       </div>
     </div>
@@ -475,14 +429,21 @@
       </div>
     </div>
   </div>
+  <section class="developers">
+    <div class="developers__wrapper">
+      <a href="#">Разработка и продвижение
+        <img src="assets/img/svg/cmbox-logo.svg" width="93" height="33" alt="Digital-Агенство CmBox"/>
+      </a>
+    </div>
+  </section>
 </footer>
 
-  <!--<script src="assets/js/main.js"></script>-->
+  <script src="assets/js/main.js"></script>
 <script src="assets/js/jquery-1.12.4.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/plugins.js"></script>
-<script src="assets/js/main-1.js"></script>
+<script src="assets/js/vendor.js"></script>
 
 </body>
 </html>

@@ -65,14 +65,9 @@ const styles = () => {
 const bootstrapJs = () => {
   return src(['source/js/bootstrap.min.js',
   'source/js/popper.min.js',
-  'source/js/main-1.js',
   'source/js/plugins.js',
-  'source/js/jquery-1.12.4.min.js'])
-    .pipe(dest('dev/assets/js'))
-}
-
-const popper = () => {
-  return src('source/js/popper.min.js')
+  'source/js/jquery-1.12.4.min.js',
+  'source/js/vendor.js'])
     .pipe(dest('dev/assets/js'))
 }
 
@@ -115,14 +110,13 @@ exports.fileinclude = htmlDev;
 exports.styles = styles;
 exports.bootstrapCss = bootstrapCss;
 exports.bootstrapJs = bootstrapJs;
-exports.popper = popper;
 exports.scripts = scripts;
 exports.watchFiles = watchFiles;
 exports.fontsDev = fontsDev;
 exports.clean = clean;
 exports.imgToBuild = imgToBuild;
 
-exports.development = series(clean, parallel(fontsDev, htmlDev, bootstrapCss, styles, bootstrapJs, popper, scripts, imgToBuild), watchFiles);
+exports.development = series(clean, parallel(fontsDev, htmlDev, bootstrapCss, styles, scripts, bootstrapJs, imgToBuild), watchFiles);
 
 
 // ---------- BUILD ----------

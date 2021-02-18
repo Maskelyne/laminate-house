@@ -12,39 +12,6 @@
   }
 }
 
-.breadcrumbs {
-  ul {
-    @include reset-list;
-    display: flex;
-    justify-content: center;
-  }
-
-  li:last-child {
-    a {
-      margin-left: 25px;
-
-      &::after {
-        display: none;
-      }
-    }
-  }
-
-  a {
-    color: $white;
-    position: relative;
-    font-family: $Geometria;
-    font-size: 14px;
-    line-height: 20px;
-
-    &::after {
-      position: absolute;
-      content: "/";
-      top: 0;
-      right: -16px;
-    }
-  }
-}
-
 .delivery__wrapper {
   width: 100%;
   max-width: 1200px;
@@ -107,6 +74,10 @@
 
       img {
         max-width: 26px;
+      }
+
+      &:hover {
+        color: $Orange;
       }
     }
 

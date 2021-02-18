@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">
+  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/icons.min.css">
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+<div class="wrapper wrapper-2 wrapper-3">
+  
+<header class="header-area header-padding-1 section-padding-1 sticky-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-8">
+        <div class="main-menu main-menu-center">
+          <nav>
+            <ul>
+              <li class="active"><a href="index.html">Каталог</a>
+                <div class="dropdown-menu-style dropdown-width-1">
+                  <ul>
+                    <li>
+                      <ul>
+                        <li><a href="index.html">Ламинат</a></li>
+                        <li><a href="index-2.html">Плинтус</a></li>
+                        <li><a href="index-3.html">Подложка</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="shop.html">Блог</a></li>
+              <li><a href="shop-onsale.html">Контакты</a></li>
+              <li><a href="portfolio.html">Вопрос-ответ</a></li>
+              <li><a href="shop.html">Оплата и доставка</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+        <div class="header-right-wrap">
+          <div class="same-style header-wishlist">
+            <a href="wishlist.html">
+              <i class="negan-icon-favourite-28"></i>
+              <span class="count-style">03</span>
+            </a>
+          </div>
+          <div class="same-style cart-wrap">
+            <a href="#" class="cart-active">
+              <i class="negan-icon-bag"></i>
+              <span class="count-style">02</span>
+            </a>
+          </div>
+          <div class="same-style header-search">
+            <a class="search-active" href="#"><i class="negan-icon-zoom"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header-small-mobile sticky-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-6">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+          </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="header-right-wrap">
+          <div class="same-style cart-wrap">
+            <a href="#" class="cart-active">
+              <i class="negan-icon-bag"></i>
+              <span class="count-style">2</span>
+            </a>
+          </div>
+          <div class="same-style mobile-off-canvas">
+            <a class="mobile-aside-button" href="#"><i class="negan-icon-menu-left"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile-off-canvas-active">
+  <a class="mobile-aside-close"><i class="negan-icon-simple-close"></i></a>
+  <div class="header-mobile-aside-wrap">
+    <div class="mobile-search">
+      <form class="search-form" action="#">
+        <input type="text" placeholder="Search entire store…">
+        <button class="button-search"><i class="negan-icon-zoom2"></i></button>
+      </form>
+    </div>
+    <div class="mobile-menu-wrap">
+      <div id="mobile-menu" class="slinky-mobile-menu text-left">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+              <ul>
+                <li><a href="index.html">Ламинат</a></li>
+                <li><a href="index-2.html">Плинтус</a></li>
+                <li><a href="index-3.html">Подложка</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+          <li>
+            <a href="shop-onsale.html">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Вопрос-ответ</a>
+          </li>
+          <li>
+            <a href="shop.html">Оплата и доставка</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-social-wrap">
+      <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+      <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+      <a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+      <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+      <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+  </div>
+</div>
+<!-- search start -->
+<div class="search-content-wrap main-search-active">
+  <a class="search-close"><i class="negan-icon-simple-close"></i></a>
+  <div class="search-content">
+    <p>Start typing and press Enter to search</p>
+    <form class="search-form" action="#">
+      <input type="text" placeholder="Search entire store…">
+      <button class="button-search"><i class="negan-icon-zoom2"></i></button>
+    </form>
+  </div>
+</div>
+<!-- mini cart start -->
+<div class="sidebar-cart-active">
+  <div class="sidebar-cart-all">
+    <a class="cart-close" href="#"><i class="negan-icon-simple-close"></i></a>
+    <div class="cart-content">
+      <h3>Shopping Cart</h3>
+      <ul>
+        <li class="single-product-cart">
+          <div class="cart-img">
+            <a href="#"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+          </div>
+          <div class="cart-title">
+            <h4><a href="#"> Flower Dress </a></h4>
+            <span>1 × £54.00</span>
+          </div>
+          <div class="cart-delete">
+            <a href="#">×</a>
+          </div>
+        </li>
+        <li class="single-product-cart">
+          <div class="cart-img">
+            <a href="#"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+          </div>
+          <div class="cart-title">
+            <h4><a href="#">Ruffled cotton top</a></h4>
+            <span>1 × £54.00</span>
+          </div>
+          <div class="cart-delete">
+            <a href="#">×</a>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-total">
+        <h4>Subtotal: <span>£ 108.00</span></h4>
+      </div>
+      <div class="cart-checkout-btn">
+        <a class="btn-hover cart-btn-style" href="cart.html">view cart</a>
+        <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="main-slider swiper-container">
+    <ul class="main-slider__wrapper swiper-wrapper">
+      <li class="swiper-slide">
+        <div class="main-slider__image">
+          <img src="assets/img/jpg/slide-1.jpg" width="1920" height="730" alt="Распродажа ламината из германии">
+        </div>
+        <div class="main-slider__text">
+          <h2>Распродажа ламината из германии!</h2>
+          <a href="#"><span>В каталог</span></a>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="swiper-image">
+          <img src="assets/img/jpg/slide-2.jpg" width="1920" height="730" alt="Распродажа ламината из германии">
+        </div>
+        <div class="main-slider__text">
+          <h2>Распродажа ламината из германии!</h2>
+          <a href="#"><span>В каталог</span></a>
+        </div>
+      </li>
+    </ul>
+    <div class="main-slider__pagination swiper-pagination"></div>
+  </section>
+  <div class="banner-area padding-10-row-col pt-20 border-top-1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+          <div class="single-banner-8 banner-hover-1 mb-20">
+            <a href="product-details.html"><img alt="" src="assets/img/banner/banner-26.jpg"></a>
+            <div class="banner-content-12">
+              <h3><span>Romantic</span> <br> Spring <br>Looks</h3>
+              <div class="banner-hm6-btn">
+                <a class="btn btn-color-gray btn-size-sm btn-style-outline" href="product-details.html"> SHOPPING NOW </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+          <div class="banner-wrap mb-20">
+            <div class="single-banner-8 mb-20 banner-hover-1">
+              <a href="product-details.html"><img alt="" src="assets/img/banner/banner-27.jpg"></a>
+              <div class="banner-content-13 banner-hm6-position1">
+                <span>Prince of wales linen trench</span>
+                <h2><span>Sale off</span> <br>70%</h2>
+                <div class="banner-hm6-btn">
+                  <a class="btn btn-color-gray btn-size-sm btn-style-outline" href="product-details.html"> SHOPPING NOW </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-banner-8 banner-hover-2">
+              <a href="product-details.html"><img alt="" src="assets/img/banner/banner-28.jpg"></a>
+              <div class="banner-content-13 banner-hm6-position2">
+                <span>Contrasting printed dress</span>
+                <h3><span>Summer</span> <br> 2019</h3>
+                <div class="banner-hm6-btn">
+                  <a class="btn btn-color-gray btn-size-sm btn-style-outline" href="product-details.html"> SHOPPING NOW </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+          <div class="single-banner-8 mb-20">
+            <a href="product-details.html"><img alt="" src="assets/img/banner/banner-29.jpg"></a>
+            <div class="banner-content-14 banner-hm6-position3">
+              <span>Pebbled weekend bag</span>
+              <h3>New Arrival</h3>
+              <div class="banner-hm6-btn">
+                <a class="btn btn-color-gray btn-size-sm btn-style-outline" href="product-details.html"> SHOPPING NOW </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+          <div class="banner-wrap mb-20">
+            <div class="single-banner-8 mb-20 banner-hover-2">
+              <a href="product-details.html"><img alt="" src="assets/img/banner/banner-30.jpg"></a>
+              <div class="banner-content-14 banner-hm6-position4">
+                <span>Canvas sneakers</span>
+                <h3>New Shoes</h3>
+                <div class="banner-hm6-btn">
+                  <a class="btn btn-color-gray btn-size-sm btn-style-outline" href="product-details.html"> SHOPPING NOW </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-banner-8 banner-hover-1">
+              <a href="product-details.html"><img alt="" src="assets/img/banner/banner-31.jpg"></a>
+              <div class="banner-content-14 banner-hm6-position5 banner-content-hover">
+                <span>Aviator sunglasses</span>
+                <h3>Sale 50%</h3>
+                <div class="banner-hm6-btn">
+                  <a class="btn btn-color-gray btn-size-sm btn-style-outline" href="product-details.html"> SHOPPING NOW </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-area pt-60 pb-30">
+    <div class="container-fluid">
+      <div class="section-title text-center mb-50 section-title-border">
+        <h2>New Arrival</h2>
+        <p>Sed vitae eros a quam malesuada porttitor nec nec</p>
+      </div>
+      <div class="product-area-wrap">
+        <div class="row">
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-1.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-1-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Bow polka-dot blouse</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-2.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-2-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Ruffled cotton top</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-3.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-3-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Flower Dress</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-4.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-4-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Back Pack</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-5.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-5-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Slim stretch cotton shirt</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-6.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-6-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Woleen Tee</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-7.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-7-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Floral Coat</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-8.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-8-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Bow polka-dot blouse</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-9.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-9-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Calvin Klein</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-col-5">
+            <div class="product-wrap mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/product/hm-6-pro-10.jpg" alt="">
+                  <img class="hover-img" src="assets/img/product/hm-6-pro-10-2.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" href="wishlist.html"><i class="fa fa-heart-o"></i><i class="heart-hover fa fa-heart"></i></a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare" href="#"><i class="negan-icon-switch"></i></a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <a title="Quick Shop" href="#" data-toggle="modal" data-target="#exampleModal">Quick Shop</a>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">Cuffed Beanie</a></h3>
+                <div class="product-price">
+                  <span>£219.00</span>
+                </div>
+                <div class="product-cart">
+                  <a title="Add To Cart" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-area">
+    <div class="row no-gutters">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="single-banner-3">
+          <a href="product-details.html"><img alt="" src="assets/img/banner/banner-9.jpg"></a>
+          <div class="banner-content-3">
+            <h2>SUMMER 2019</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="single-banner-3">
+          <a href="product-details.html"><img alt="" src="assets/img/banner/banner-10.jpg"></a>
+          <div class="banner-content-3">
+            <h2>RTL/TREND</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-area border-top-1 pt-60">
+  <div class="footer-top section-padding-1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="footer-sizes">
+          <div class="footer-widget footer-about mb-30">
+            <a href="#">
+              <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+            </a>
+            <p>Зарегистрирован в Торговом реестре 12.01.2015 №171975</p>
+            <div class="footer-time-work">
+              <img src="assets/img/svg/icon-clock.svg" width="21" height="21" alt="Режим работы">
+              <p>Режим работы: <br> пн-вс: <span>9-00 до 18-00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-custom-2">
+          <div class="footer-widget mb-30">
+            <div class="footer-title">
+              <h3>Каталог</h3>
+            </div>
+            <div class="footer-list">
+              <ul>
+                <li><a href="contact.html">Ламинат</a></li>
+                <li><a href="#">Плинтус</a></li>
+                <li><a href="contact.html">Подложка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-custom-2">
+          <div class="footer-widget mb-30">
+            <div class="footer-list text-bold">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-blocks">
+          <div class="footer-widget mb-30">
+            <div class="footer-phone">
+              <a href="tel:+375172890339">+375 (17) 289-03-39</a>
+              <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+              <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+            </div>
+            <ul class="footer-messengers__list">
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-viber.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Вайбер</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-tg.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-whatsapp.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Ватсапп</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="footer-widget footer-about mb-30">
+            <div class="footer-info">
+              <a href="mailto:domlaminata@tut.by">
+                <img src="assets/img/svg/icon-mail.svg" width="30" height="30" alt="E-mail">
+                domlaminata@tut.by</a>
+              <a href="#">
+                <img src="assets/img/svg/icon-maps.svg" width="30" height="30" alt="Адрес">
+                Минск, ул.Будславская, 19</a>
+            </div>
+            <ul class="footer-social__list">
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-vk.svg" width="30" height="30" alt="Вконтакте">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-inst.svg" width="30" height="30" alt="Инстаграм">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-youtube.svg" width="30" height="30" alt="Ютуб">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-ok.svg" width="30" height="30" alt="Одноклассники">
+                  <span class="visually-hidden">Одноклассники</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-fb.svg" width="30" height="30" alt="Фейсбук">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="developers">
+    <div class="developers__wrapper">
+      <a href="#">Разработка и продвижение
+        <img src="assets/img/svg/cmbox-logo.svg" width="93" height="33" alt="Digital-Агенство CmBox"/>
+      </a>
+    </div>
+  </section>
+</footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="lightcase-icon-close"></i></button>
+    </div>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="quickview-img-wrap">
+                <div class="quickview-small-img-slider text-center">
+                  <div class="single-small-img">
+                    <img src="assets/img/product-details/quickview-s1.jpg" alt="" />
+                  </div>
+                  <div class="single-small-img">
+                    <img src="assets/img/product-details/quickview-s2.jpg" alt="" />
+                  </div>
+                  <div class="single-small-img">
+                    <img src="assets/img/product-details/quickview-s1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="quickview-big-img-slider text-center">
+                  <div class="single-big-img">
+                    <img src="assets/img/product-details/quickview-l1.jpg" alt="" />
+                  </div>
+                  <div class="single-big-img">
+                    <img src="assets/img/product-details/quickview-l2.jpg" alt="" />
+                  </div>
+                  <div class="single-big-img">
+                    <img src="assets/img/product-details/quickview-l1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="product-details-content quickview-content">
+                <h2>Fringed embroidered kaftan</h2>
+                <div class="product-details-price">
+                  <span>£54.00</span>
+                </div>
+                <div class="pro-details-sku">
+                  <span>SKU: D-12525</span>
+                </div>
+                <p>Pellentesque orci lectus, bibendum iaculis aliquet id, ullamcorper nec ipsum. In laoreet ligula vitae tristique viverra. Suspendisse augue nunc, laoreet in arcu ut, vulputate malesuada justo. Donec porttitor elit justo, sed lobortis nulla interdum et. Sed lobort</p>
+                <div class="pro-details-quality">
+                  <div class="cart-plus-minus">
+                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                  </div>
+                  <div class="pro-details-cart btn-hover">
+                    <a href="#">Add To Cart</a>
+                  </div>
+                  <div class="pro-details-wishlist">
+                    <a href="#"><i class="fa fa-heart-o"></i><span>Add To Wilhlist</span></a>
+                  </div>
+                  <div class="pro-details-compare">
+                    <a href="#"><i class="negan-icon-switch"></i> <span>Add To Compare</span></a>
+                  </div>
+                </div>
+                <div class="pro-details-meta">
+                  <span>Categories :</span>
+                  <ul>
+                    <li><a href="#">Demo 01 - Must Have,</a></li>
+                    <li><a href="#">Demo 03 - New Arrival,</a></li>
+                    <li><a href="#">Demo 14 - Top Sale,</a></li>
+                    <li><a href="#">Women</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal end -->
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/vendor.js"></script>
+
+
+</body>
+
+</html>
