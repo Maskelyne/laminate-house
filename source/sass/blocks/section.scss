@@ -2,14 +2,13 @@
 /*--------- 5. Section title --------------*/
 
 .section-title {
-    h2 {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 24px;
-        margin: 0 0 14px;
+    h1 {
+        font-family: $Geometria-Bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
         @media #{$xs-layout} {
             font-size: 25px;
-            margin: 0 0 10px;
         }
     }
     p {

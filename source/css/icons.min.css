@@ -136,7 +136,7 @@
   content: "\67";
 }
 .negan-icon-arrows-minimal-left:before {
-  content: "\68"; 
+  content: "\68";
 }
 .negan-icon-arrows-minimal-right:before {
   content: "\69";
@@ -265,7 +265,8 @@
 
 @font-face {
   font-family: 'lightcase';
-  src: url("../fonts/lightcase.ttf");
+  src: url("../fonts/lightcase.woff"),
+  url("../fonts/lightcase.woff2");
   font-weight: normal;
   font-style: normal;
 }
