@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+
+@include('general/head.html')
+
+<body>
+<div class="wrapper wrapper-2 wrapper-3">
+  @include('components/header.html')
+  <div class="delivery-title delivery-title--black delivery-title--border delivery-title--nom delivery-title--bread">
+    <h2>Контакты</h2>
+    <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact-area contact-area-mrg">
+    <div class="contact-page-map">
+      <div id="contact-2">
+        <div class="ymap-container" style="background-image: url('assets/img/ymap/yandex-before.jpg');">
+          <div class="loader loader-default"></div>
+          <div id="map-yandex"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="ml-auto col-lg-6 col-md-12 col-12">
+          <div class="contact-info-area pr-40">
+            <div class="contact-info-bottom">
+              <div class="row">
+                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-3">
+                  <div class="single-contact-info mb-30 text-center footer-widget footer-widget--contacts">
+                    <div class="footer-phone">
+                      <a href="tel:+375172890339">+375 (17) 289-03-39</a>
+                      <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+                      <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+                    </div>
+                    <div class="contacts__mail">
+                      <a href="mailto:domlaminata@tut.by">
+                        <img src="assets/img/svg/con-email.svg" width="30" height="30" alt="E-mail">
+                        domlaminata@tut.by</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-4 footer-widget footer-widget--contacts">
+                  <div class="footer-time-work">
+                    <img src="assets/img/svg/con-clock.svg" width="21" height="21" alt="Режим работы">
+                    <p>Режим работы: <br> пн-вс: <span>9-00 до 18-00</span></p>
+                  </div>
+                  <div class="contacts__address">
+                    <a href="#">
+                      <img src="assets/img/svg/con-marker.svg" width="30" height="30" alt="Адрес">
+                      Минск, ул.Будславская, 19</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <h3> Let us know what you have in mind, and we'll get back to you in an instant!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris su</p>
+
+            <div class="contact-from-2">
+              <form id="contact-form" action="assets/mail-php/mail.php" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <input name="first_name" type="text" placeholder="Ваше имя">
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <input name="phone" type="text" placeholder="Номер телефона">
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <textarea name="message" placeholder="Введите сообщение"></textarea>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <button class="submit" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </form>
+              <p class="form-messege"></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pl-125">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-5 col-md-12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- All JS is here
+============================================ -->
+
+<!--&lt;!&ndash; jQuery JS &ndash;&gt;-->
+<!--<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>-->
+<!--&lt;!&ndash; Popper JS &ndash;&gt;-->
+<!--<script src="assets/js/popper.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap JS &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash; Plugins JS &ndash;&gt;-->
+<!--<script src="assets/js/plugins.js"></script>-->
+<!--&lt;!&ndash; Ajax Mail &ndash;&gt;-->
+<!--<script src="assets/js/ajax-mail.js"></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGM-62ap9R-huo50hJDn05j3x-mU9151Y"></script>-->
+<!--<script src="assets/js/map-3.js"></script>-->
+<!--&lt;!&ndash; Main JS &ndash;&gt;-->
+<!--<script src="assets/js/main.js"></script>-->
+
+
+
+@include('components/footer.html')
+@include('general/scripts.html')
+
+</body>
+
+</html>

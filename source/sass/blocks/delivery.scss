@@ -4,11 +4,33 @@
 
   h2 {
     font-family: $Geometria-Bold;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
     text-transform: uppercase;
     text-align: center;
     color: $white;
+  }
+  &--border{
+    border-bottom: 1px solid #8A8A8A;
+  }
+  &--bread{
+    .breadcrumbs a{
+      color: #8A8A8A;
+    }
+    .breadcrumbs li::after{
+      color: #8A8A8A;
+    }
+    .breadcrumbs li:first-child a{
+      margin-left: 0;
+    }
+  }
+  &--nom{
+    margin-bottom: 0;
+  }
+  &--black {
+    h2{
+      color: #343538;
+    }
   }
 }
 

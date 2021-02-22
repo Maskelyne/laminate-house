@@ -69,12 +69,13 @@
 }
 
 .footer-widget {
+
   .footer-phone {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 10px;
     grid-gap: 5px 0;
-    padding-left: 35px;
+    padding-left: 30px;
     position: relative;
 
     &::before {
@@ -234,6 +235,25 @@
             }
         }
     }
+  &--contacts{
+    .footer-phone::before{
+      width: 40px;
+      height: 40px;
+      background-size: 40px 40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .footer-time-work {
+      display: flex;
+      align-items: center;
+
+      img{
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
 }
 
 .home-9-footer {

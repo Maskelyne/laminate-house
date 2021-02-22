@@ -36,7 +36,7 @@
 }
 
 .contact-info-area {
-    padding: 80px 295px 62px 85px;
+    padding: 80px 200px 62px 60px;
     @media #{$xl-layout} {
         padding: 80px 60px 62px 50px;
     }
@@ -127,10 +127,103 @@
 }
 
 
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent;
+}
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0,0,0,.55);
+}
+
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
 
+.contacts__mail{
+  a{
+    display: flex;
+    align-items: center;
+    img{
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+}
 
-
-
-
+.contacts__address{
+  a{
+    display: flex;
+    align-items: center;
+  }
+  img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
