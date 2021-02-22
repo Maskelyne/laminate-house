@@ -1,0 +1,117 @@
+.main-slider {
+  position: relative;
+  height: 75vh;
+
+  @include mobile-width {
+    height: 50vh;
+  }
+
+  .main-slider__image {
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: top center;
+
+      @include mobile-width {
+        height: 50vh;
+      }
+    }
+  }
+
+  .main-slider__pagination {
+    right: 80px;
+
+    @include desktop-width-middle {
+      right: 30px;
+    }
+
+    @include tablet-width {
+      right: 15px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-family: $Geometria;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.5);
+
+    &::after {
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $white;
+
+    &::after {
+      width: 40px;
+      background-color: $Orange;
+    }
+  }
+}
+
+.main-slider__text {
+  max-width: 650px;
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  transform: translateY(17%);
+  z-index: 5;
+
+  @include desktop-width-middle {
+    left: 30px;
+  }
+
+  @include tablet-width {
+    left: 15px;
+    max-width: 500px;
+  }
+
+  @include mobile-width {
+    max-width: 300px;
+  }
+
+  img {
+    max-width: 200px;
+
+    @include mobile-width {
+      max-width: 150px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 45px;
+    color: $white;
+    font-family: $Geometria-Bold;
+    font-size: 46px;
+    line-height: 57px;
+    text-transform: uppercase;
+
+    @include tablet-width {
+      margin-bottom: 30px;
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @include mobile-width {
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+/*-------- 10. Deal style -------*/
+
+.deal-content {
+    h2 {
+        color: #b9afa1;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 2px;
+        @media #{$xs-layout} {
+            font-size: 42px;
+        }
+        span {
+            font-family: $nothingyoucoulddo;
+            color: #b9afa1;
+            font-weight: 400;
+        }
+    }
+    > p{
+        color: #8a8a8a;
+        font-size: 12px;
+        margin: 0 auto;
+        font-family: "Montserrat", sans-serif;
+        width: 54%;
+        @media #{$xs-layout} {
+            width: 100%;
+        }
+    }
+    .timer-style {
+        margin: 36px 0 43px;
+        div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            span {
+                font-size: 36px;
+                position: relative;
+                margin: 0 74px;
+                @media #{$md-layout} {
+                    margin: 0 45px;
+                }
+                @media #{$xs-layout} {
+                    margin: 0 15px;
+                    font-size: 27px;
+                }
+                &::before {
+                    position: absolute;
+                    right: -73px;
+                    top: 13px;
+                    content: "";
+                    height: 20px;
+                    width: 2px;
+                    background-color: #d4d4d4;
+                    @media #{$md-layout} {
+                        right: -45px;
+                    }
+                    @media #{$xs-layout} {
+                        right: -14px;
+                        top: 4px;
+                    }
+                }
+                &:last-child:before {
+                    display: none;
+                }
+                p{
+                    font-style: italic;
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+    .deal-btn {
+        a {
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+}
+
+.deal-area {
+    @media #{$lg-layout} {
+        .bg-img {
+            background-position: 127%;
+        }
+    }
+    @media #{$md-layout} {
+        .bg-img {
+            background-position: 103%;
+        }
+    }
+    @media #{$sm-layout} {
+        .bg-img {
+            background-position: 81%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

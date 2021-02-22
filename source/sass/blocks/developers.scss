@@ -1,0 +1,19 @@
+.developers__wrapper {
+  padding: 10px 0;
+  background-color: #fafafa;
+
+  a {
+    font-family: $Geometria;
+    font-size: 14px;
+    line-height: 28px;
+    display: grid;
+    grid-template-columns: 11% 100px;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet-width {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

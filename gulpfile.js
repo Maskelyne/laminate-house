@@ -26,7 +26,7 @@ const fontsDev = () => {
 }
 
 const htmlDev = () => {
-  return src(['source/html/index.html'])
+  return src(['source/html/*.html'])
     .pipe(fileinclude({
       prefix: '@',
       basepath: '@file'
@@ -34,6 +34,11 @@ const htmlDev = () => {
     .pipe(dest('dev'))
     .pipe(browserSync.stream());
 };
+
+const bootstrapCss = () => {
+  return src('source/css/*.css')
+    .pipe(dest('dev/assets/css'))
+}
 
 const styles = () => {
   return src('source/sass/style.scss')
@@ -57,6 +62,15 @@ const styles = () => {
     .pipe(browserSync.stream());
 };
 
+const bootstrapJs = () => {
+  return src(['source/js/bootstrap.min.js',
+  'source/js/popper.min.js',
+  'source/js/plugins.js',
+  'source/js/jquery-1.12.4.min.js',
+  'source/js/vendor.js'])
+    .pipe(dest('dev/assets/js'))
+}
+
 const scripts = () => {
   return src('source/js/main.js')
     .pipe(webpackStream(webpackConfig), webpack)
@@ -71,10 +85,7 @@ const scripts = () => {
 };
 
 const imgToBuild = () => {
-  return src([
-    'source/img/**/*.jpg',
-    'source/img/**/*.jpeg',
-    'source/img/**/*.png'])
+  return src(['source/img/**/*{png,jpg,svg}'])
     .pipe(dest('dev/assets/img'))
 };
 
@@ -91,18 +102,21 @@ const watchFiles = () => {
   watch('source/sass/**/*.scss', styles);
   watch('source/js/**/*.js', scripts);
   watch('source/img/**/*.jpg', imgToBuild);
-  watch('source/img/**/*.jpeg', imgToBuild);
+  watch('source/img/**/*.svg', imgToBuild);
   watch('source/img/**/*.png', imgToBuild);
 }
 
 exports.fileinclude = htmlDev;
 exports.styles = styles;
+exports.bootstrapCss = bootstrapCss;
+exports.bootstrapJs = bootstrapJs;
 exports.scripts = scripts;
 exports.watchFiles = watchFiles;
 exports.fontsDev = fontsDev;
 exports.clean = clean;
+exports.imgToBuild = imgToBuild;
 
-exports.development = series(clean, parallel(fontsDev, htmlDev, styles, scripts, imgToBuild), watchFiles);
+exports.development = series(clean, parallel(fontsDev, htmlDev, bootstrapCss, styles, scripts, bootstrapJs, imgToBuild), watchFiles);
 
 
 // ---------- BUILD ----------

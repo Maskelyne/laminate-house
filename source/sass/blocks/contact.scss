@@ -1,0 +1,136 @@
+/*-------- 16. Contact page ----------*/
+
+
+#map-height {
+	height: 290px;
+}
+
+.contact-area {
+    position: relative;
+    .contact-page-map {
+        height: 100%;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 2;
+        left: 0;
+        @media #{$md-layout} {
+            position: inherit;
+            width: 100%;
+        }
+        @media #{$xs-layout} {
+            position: inherit;
+            width: 100%;
+        }
+    }
+}
+#contact-2 {
+    height: 100%;
+    @media #{$md-layout} {
+        height: 400px;
+    }
+    @media #{$xs-layout} {
+        height: 300px;
+    }
+}
+
+.contact-info-area {
+    padding: 80px 295px 62px 85px;
+    @media #{$xl-layout} {
+        padding: 80px 60px 62px 50px;
+    }
+    @media #{$lg-layout} {
+        padding: 50px 30px 30px 30px;
+    }
+    @media #{$md-layout} {
+        padding: 50px 30px 50px 30px;
+    }
+    @media #{$xs-layout} {
+        padding: 50px 15px 20px 15px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 30px;
+        @media #{$xs-layout} {
+            font-size: 20px;
+        }
+        &:before {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #343538;
+            content: "";
+            bottom: -18px;
+        }
+    }
+    p {
+        font-size: 12px;
+        font-family: $Geometria;
+        margin: 0;
+    }
+    .contact-from-2 {
+        margin: 46px 0 0;
+        form {
+            input , textarea {
+                border: 1px solid #e8e8e8;
+                height: 50px;
+                font-size: 12px;
+                padding: 2px 15px;
+                background-color: transparent;
+                color: #8a8a8a;
+                margin-bottom: 20px;
+                &:focus {
+                    border: 1px solid #343538;
+                }
+            }
+            & button.submit {
+                color: #fff;
+                background-color: #343538;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 700;
+                height: auto;
+                padding: 17px 10px 16px;
+                width: 100%;
+                border: none;
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+            textarea {
+                height: 130px;
+            }
+        }
+    }
+    .contact-info-bottom {
+        margin-top: 34px;
+        @media #{$xs-layout} {
+            margin-top: 25px;
+        }
+        .single-contact-info {
+            i {
+                font-size: 30px;
+                color: #343538;
+            }
+            p {
+                text-transform: uppercase;
+                font-size: 12px;
+                margin: 6px 0 10px;
+                color: #343538;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+/*----------- 19. Breadcrumb style ---------*/
+
+.breadcrumb-area {
+    .breadcrumb-content {
+        &.breadcrumb-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1;
+        }
+        ul {
+            li {
+                display: inline-block;
+                font-size: 10px;
+                color: #8a8a8a;
+                margin-right: 16px;
+                text-transform: uppercase;
+                position: relative;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &::before {
+                    position: absolute;
+                    width: 12px;
+                    height: 1px;
+                    background-color: #8a8a8a;
+                    content: "";
+                    right: -17px;
+                    top: 11px;
+                    z-index: 99;
+                    transform: rotate(107deg);
+                }
+                &:last-child::before {
+                    display: none;
+                }
+                a {
+                    color: #8a8a8a;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+        &.breadcrumb-center {
+            h2 {
+                margin-bottom: 13px;
+            }
+        }
+        &.breadcrumb-white {
+            h2 {
+                color: #fff;
+            }
+            ul {
+                li {
+                    color: #fff;
+                    &::before {
+                        background-color: #fff;
+                    }
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media #{$xs-layout} {
+        &.pt-80 {
+            padding-top: 50px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.breadcrumbs {
+  ul {
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "/";
+      top: 0;
+      right: -16px;
+      color: $white;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+
+      a {
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    a {
+      margin-left: 25px;
+
+      &:hover {
+        color: $Orange;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+    position: relative;
+    font-family: $Geometria;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

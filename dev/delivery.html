@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">
+  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/icons.min.css">
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="wrapper wrapper-2 wrapper-3">
+  
+<header class="header-area header-padding-1 section-padding-1 sticky-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-8">
+        <div class="main-menu main-menu-center">
+          <nav>
+            <ul>
+              <li class="active"><a href="#">Каталог</a>
+                <div class="dropdown-menu-style dropdown-width-1">
+                  <ul>
+                    <li>
+                      <ul>
+                        <li><a href="#">Ламинат</a></li>
+                        <li><a href="#">Плинтус</a></li>
+                        <li><a href="#">Подложка</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+        <div class="header-right-wrap">
+          <div class="same-style header-wishlist">
+            <a href="#">
+              <i class="negan-icon-switch"></i>
+              <span class="count-style">03</span>
+            </a>
+          </div>
+          <div class="same-style cart-wrap">
+            <a href="#" class="cart-active">
+              <i class="negan-icon-bag"></i>
+              <span class="count-style">02</span>
+            </a>
+          </div>
+          <div class="same-style header-search">
+            <a class="search-active" href="#"><i class="negan-icon-zoom"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header-small-mobile sticky-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-6">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+          </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="header-right-wrap">
+          <div class="same-style cart-wrap">
+            <a href="#" class="cart-active">
+              <i class="negan-icon-bag"></i>
+              <span class="count-style">2</span>
+            </a>
+          </div>
+          <div class="same-style mobile-off-canvas">
+            <a class="mobile-aside-button" href="#"><i class="negan-icon-menu-left"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile-off-canvas-active">
+  <a class="mobile-aside-close"><i class="negan-icon-simple-close"></i></a>
+  <div class="header-mobile-aside-wrap">
+    <div class="mobile-search">
+      <form class="search-form" action="#">
+        <input type="text" placeholder="Search entire store…">
+        <button class="button-search"><i class="negan-icon-zoom2"></i></button>
+      </form>
+    </div>
+    <div class="mobile-menu-wrap">
+      <div id="mobile-menu" class="slinky-mobile-menu text-left">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+              <ul>
+                <li><a href="index.html">Ламинат</a></li>
+                <li><a href="index-2.html">Плинтус</a></li>
+                <li><a href="index-3.html">Подложка</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+          <li>
+            <a href="shop-onsale.html">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Вопрос-ответ</a>
+          </li>
+          <li>
+            <a href="shop.html">Оплата и доставка</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-social-wrap">
+      <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+      <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+      <a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+      <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+      <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+  </div>
+</div>
+<!-- search start -->
+<div class="search-content-wrap main-search-active">
+  <a class="search-close"><i class="negan-icon-simple-close"></i></a>
+  <div class="search-content">
+    <p>Start typing and press Enter to search</p>
+    <form class="search-form" action="#">
+      <input type="text" placeholder="Search entire store…">
+      <button class="button-search"><i class="negan-icon-zoom2"></i></button>
+    </form>
+  </div>
+</div>
+<!-- mini cart start -->
+<div class="sidebar-cart-active">
+  <div class="sidebar-cart-all">
+    <a class="cart-close" href="#"><i class="negan-icon-simple-close"></i></a>
+    <div class="cart-content">
+      <h3>Shopping Cart</h3>
+      <ul>
+        <li class="single-product-cart">
+          <div class="cart-img">
+            <a href="#"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+          </div>
+          <div class="cart-title">
+            <h4><a href="#"> Flower Dress </a></h4>
+            <span>1 × £54.00</span>
+          </div>
+          <div class="cart-delete">
+            <a href="#">×</a>
+          </div>
+        </li>
+        <li class="single-product-cart">
+          <div class="cart-img">
+            <a href="#"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+          </div>
+          <div class="cart-title">
+            <h4><a href="#">Ruffled cotton top</a></h4>
+            <span>1 × £54.00</span>
+          </div>
+          <div class="cart-delete">
+            <a href="#">×</a>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-total">
+        <h4>Subtotal: <span>£ 108.00</span></h4>
+      </div>
+      <div class="cart-checkout-btn">
+        <a class="btn-hover cart-btn-style" href="cart.html">view cart</a>
+        <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <main>
+  <section class="delivery">
+    <div class="delivery-title" style="background-image: url(../assets/img/jpg/bckg-delivery.jpg)">
+      <h2>Оплата и доставка</h2>
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Оплата и доставка</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="delivery__wrapper">
+      <h3>
+        <img src="assets/img/svg/icon-delivery.svg" width="80" height="65" alt="Варианты доставки">
+        Варианты доставки
+      </h3>
+      <div class="delivery__box">
+        <div class="delivery__inner-box-1">
+          <strong>Доставка</strong>
+          <p>По г. Минску:</p>
+          <p>- доставка до подъезда, в пределах МКАД+10км.- <strong>15 руб.</strong></p>
+          <p>- при покупке более 30 м.кв. ламината - <strong>бесплатно !</strong></p>
+          <p>По Минской обл.:</p>
+          <p>- из расчета <strong>50 коп/км</strong> (в одну сторону). Не менее 15 руб.</p>
+        </div>
+        <div class="delivery__inner-box-2 text-gray">
+          <strong>Самовывоз</strong>
+          <p>Вы можете забрать заказ самостоятельно с нашего склада по адресу: </p>
+          <a href="#"><img src="assets/img/svg/icon-maps.svg" width="26" height="26" alt="Минск, ул.Будславская, 19">Минск, ул.Будславская, 19</a>
+          <p>Если вы осуществляете самовывоз, оплату необходимо будет совершить в кассе нашего магазина</p>
+        </div>
+      </div>
+      <h3>
+        <img src="assets/img/svg/icon-shop.svg" width="65" height="65" alt="Варианты оплаты">
+        Варианты оплаты
+      </h3>
+      <div class="delivery__box">
+        <div class="delivery__inner-box-1 text-gray">
+          <strong>Наличные</strong>
+          <p>Вы можете оплатить покупку при доставке, рассчитываясь с курьером наличными деньгами</p>
+        </div>
+        <div class="delivery__inner-box-2 text-gray">
+          <strong>Система «Расчет» (ЕРИП)</strong>
+          <p>Вы можете оплатить товар через систему ”Расчет“ (ЕРИП), в любом удобном для Вас пункте банковского обслуживания</p>
+        </div>
+        <div class="delivery__inner-box-1 text-gray">
+          <strong>Безналичный расчёт</strong>
+          <p>-для физ.лиц (оплата через банк) </p>
+          <p>-для юридических лиц (счет с ндс)</p>
+        </div>
+        <div class="delivery__inner-box-2 text-gray">
+          <strong>Банковская карта</strong>
+          <p>-оплата через теминал</p>
+          <p>-оплата карой “Покупок”</p>
+          <p>-рассрочка по карте “Халва” на 3 месяца</p>
+          <div class="delivery__image">
+            <img src="assets/img/jpg/image-bgbp.jpg" width="80" height="50" alt="Белгазпромбанк">
+            <img src="assets/img/jpg/image-mtb.jpg" width="80" height="50" alt="МТБанк">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="delivery__box-info">
+      <div class="delivery__box-wrapper">
+        <div class="delivery__text">
+          <h3>
+            <img src="assets/img/png/image-erip.png" width="60" height="40" alt="Оплата через ЕРИП">
+            Подробности оплаты через ЕРИП
+          </h3>
+          <p>- Оплатить товары интернет-магазина Domlaminata.by Вы можете через систему ”Расчет“ (ЕРИП), в любом удобном для Вас пункте банковского обслуживания – интернет-банке, с помощью мобильного банкинга, инфокиоске, кассе банков, банкомате и т.д.</p>
+          <p>Совершить оплату можно с использованием наличных денежных средств, электронных денег и банковских платежных карточек в пунктах банковского обслуживания  банков, которые оказывают услуги по приему платежей, а также посредством инструментов дистанционного банковского обслуживания.</p>
+          <strong>Пожалуйста уточните все интерисующие Вас вопросы о покупке с менеджерами нашего магазина до совершения оплаты по телефонам:</strong>
+          <a href="tel:+375172890339">+375 17 289-03-39</a>
+          <a href="tel:+375296971422">+375 29 697-14-22 (А1)</a>
+          <a href="tel:+375336971333">+375 33 697-13-33 (МТС)</a>
+          <strong>Для проведения платежа необходимо:</strong>
+          <ol>
+            <li>
+              Выбрать последовательно пункты:
+              <p>- Система "Расчет" (ЕРИП)</p>
+              <p>- Интернет-магазины/сервисы</p>
+              <p>- D</p>
+              <p>- Domlaminata.by</p>
+            </li>
+            <li>
+              Для оплаты "Товара" ввести Номер заказа.
+            </li>
+            <li>
+              Ввести сумму платежа (если не указана).
+            </li>
+            <li>
+              Проверить корректность информации.
+            </li>
+            <li>
+              Совершить платеж.
+            </li>
+          </ol>
+          <p>Если Вы осуществляете платеж в кассе банка, пожалуйста, сообщите кассиру о необходимости проведения платежа через систему ”Расчет“ (ЕРИП).</p>
+          <p> Техническое взаимодействие с системой "Расчет" (ЕРИП) осуществляется с помощью сервиса «Экспресс Платежи»
+            <a class="delivery__text-link" href="https://express-pay.by/">https://express-pay.by/</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer-area border-top-1 pt-60">
+  <div class="footer-top section-padding-1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="footer-sizes">
+          <div class="footer-widget footer-about mb-30">
+            <a href="#">
+              <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+            </a>
+            <p>Зарегистрирован в Торговом реестре 12.01.2015 №171975</p>
+            <div class="footer-time-work">
+              <img src="assets/img/svg/icon-clock.svg" width="21" height="21" alt="Режим работы">
+              <p>Режим работы: <br> пн-вс: <span>9-00 до 18-00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-custom-2">
+          <div class="footer-widget mb-30">
+            <div class="footer-list">
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Ламинат</a></li>
+                <li><a href="#">Плинтус</a></li>
+                <li><a href="#">Подложка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-custom-2">
+          <div class="footer-widget mb-30">
+            <div class="footer-list text-bold">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-blocks">
+          <div class="footer-widget mb-30">
+            <div class="footer-phone">
+              <a href="tel:+375172890339">+375 (17) 289-03-39</a>
+              <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+              <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+            </div>
+            <ul class="footer-messengers__list">
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-viber.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Вайбер</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-tg.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-whatsapp.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Ватсапп</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="footer-widget footer-about mb-30">
+            <div class="footer-info">
+              <a href="mailto:domlaminata@tut.by">
+                <img src="assets/img/svg/icon-mail.svg" width="30" height="30" alt="E-mail">
+                domlaminata@tut.by</a>
+              <a href="#">
+                <img src="assets/img/svg/icon-maps.svg" width="30" height="30" alt="Адрес">
+                Минск, ул.Будславская, 19</a>
+            </div>
+            <ul class="footer-social__list">
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-vk.svg" width="30" height="30" alt="Вконтакте">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-inst.svg" width="30" height="30" alt="Инстаграм">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-youtube.svg" width="30" height="30" alt="Ютуб">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-ok.svg" width="30" height="30" alt="Одноклассники">
+                  <span class="visually-hidden">Одноклассники</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-fb.svg" width="30" height="30" alt="Фейсбук">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="developers">
+    <div class="developers__wrapper">
+      <a href="#">Разработка и продвижение
+        <img src="assets/img/svg/cmbox-logo.svg" width="93" height="33" alt="Digital-Агенство CmBox"/>
+      </a>
+    </div>
+  </section>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/vendor.js"></script>
+
+</body>
+</html>

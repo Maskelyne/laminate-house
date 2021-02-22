@@ -28,11 +28,11 @@ a {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: $Geometria;
+  //font-family: $Geometria;
   font-size: 16px;
   line-height: 20px;
-  font-weight: $Normal;
-  color: $Gray;
+  //font-weight: $Normal;
+  //color: $Gray;
   display: flex;
   flex-direction: column;
 }
@@ -61,5 +61,15 @@ main {
 //
 //  @media (max-width: $tablet-width) {
 //    padding: $tablet-padding;
+//  }
+//}
+//
+//.index-list {
+//  h3 {
+//    color: $Gray;
+//  }
+//
+//  a {
+//    color: $Orange;
 //  }
 //}

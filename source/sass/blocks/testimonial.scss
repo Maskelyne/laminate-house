@@ -1,0 +1,190 @@
+/*-------- 14. Testimonial style --------*/
+
+.testimonial-area {
+    @media #{$xs-layout} {
+        &.pb-75 {
+            padding-bottom: 50px;
+        }
+        &.pt-90 {
+            padding-top: 50px;
+        }
+    }
+}
+
+.single-testimonial-wrap {
+    margin: 0 0 50px;
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 0 0 20px;
+    }
+    .client-imfo {
+        p {
+            margin: 0;
+            line-height: 30px;
+        }
+        h5 {
+            text-transform: uppercase;
+            font-size: 12px;
+            margin: 35px 0 0;
+            position: relative;
+            &::before {
+                position: absolute;
+                top: -20px;
+                left: 0;
+                right: 0;
+                content: "";
+                height: 1px;
+                width: 50px;
+                background-color: #343538;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.testimonial-active.owl-carousel , .testimonial-active-3.owl-carousel {
+    .owl-item {
+        img {
+            display: inline-block;
+            width: auto;
+        }
+    }
+    &.owl-dot-style-1 {
+       .owl-dots {
+            text-align: center;
+            .owl-dot {
+                background: #343538 none repeat scroll 0 0;
+                border-radius: 100%;
+                display: inline-block;
+                height: 9px;
+                margin: 0 4px;
+                width: 9px;
+                transition: all .3s ease 0s;
+                &:hover {
+                    background-color: #dcb86c;
+                }
+                &.active {
+                    background-color: #dcb86c;
+                }
+            }
+        } 
+    }
+}
+
+.single-testimonial-wrap2 {
+    position: relative;
+    padding-top: 60px;
+    &::before {
+        content: "\201C";
+        font-family: montserrat,sans-serif;
+        font-size: 80px;
+        font-weight: 700;
+        position: absolute;
+        line-height: 1;
+        font-style: normal;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        left: 50%;
+        margin-left: -20px;
+        text-align: center;
+        color: #343538;
+    }
+    p{
+        font-size: 30px;
+        line-height: 1.6;
+        font-style: italic;
+        font-family: $playfairdisplay;
+        color: #343538;
+        margin: 0 0 42px;
+        @media #{$lg-layout} {
+            font-size: 25px;
+        }
+        @media #{$md-layout} {
+            font-size: 22px;
+        }
+        @media #{$xs-layout} {
+            font-size: 18px;
+        }
+    }
+    h5 {
+        font-size: 12px;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0;
+        display: inline-block;
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: -22px;
+            width: 50px;
+            height: 1px;
+            background-color: #343538;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+.nav-style-2 {
+    .owl-nav {
+        div {
+            color: #858a9f;
+            font-size: 38px;
+            left: -85px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease 0s;
+            @media #{$xl-layout} {
+                left: -15px;
+                font-size: 33px;
+            }
+            @media #{$lg-layout} {
+                left: -25px;
+                font-size: 25px;
+            }
+            @media #{$md-layout} {
+                left: -15px;
+                font-size: 25px;
+            }
+            &.owl-next {
+                left: auto;
+	            right: -87px;
+                @media #{$xl-layout} {
+                    right: -15px;
+                }
+                @media #{$lg-layout} {
+                    right: -25px;
+                }
+                @media #{$md-layout} {
+                    right: -15px;
+                }
+            }
+            &:hover {
+                color: $theme-color;
+            }
+        } 
+    }
+}
+
+.testimonial-area {
+    @media #{$xs-layout} {
+        &.pt-65 {
+            padding-top: 15px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

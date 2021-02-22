@@ -1,0 +1,99 @@
+/*--------- 26. Service page ------------*/
+
+.service-area {
+    position: relative;
+    overflow: hidden;
+    .service-page-1 {
+        height: 100%;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 2;
+        left: 0;
+        @media #{$xs-layout} {
+            position: inherit;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .service-page-2 {
+        height: 100%;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 2;
+        right: 0;
+        @media #{$xs-layout} {
+            position: inherit;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .service-content-1 {
+        &.service-me-mrg-1{
+            margin: 230px 230px 253px 250px;
+            @media #{$xl-layout} {
+                margin: 130px 80px 153px 80px;
+            }
+            @media #{$lg-layout} {
+                margin: 100px 50px 113px 50px;
+            }
+            @media #{$md-layout} {
+                margin: 70px 50px 83px 50px;
+            }
+            @media #{$xs-layout} {
+                margin: 46px 15px 45px 15px;
+            }
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            position: relative;
+            margin: 0 0 38px;
+            @media #{$lg-layout} {
+                font-size: 37px;
+            }
+            @media #{$md-layout} {
+                font-size: 30px;
+            }
+            @media #{$xs-layout} {
+                font-size: 25px;
+            }
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: -18px;
+                background-color: #dcb86c;
+                height: 2px;
+                width: 50px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+/*-------- 17. Video style -----------*/
+
+.video-area {
+    .video-content {
+        span {
+            letter-spacing: 2px;
+            font-size: 16px;
+            color: #fff;
+        }
+        h2 {
+            font-size: 60px;
+            color: #fff;
+            font-family: $nothingyoucoulddo;
+            margin: 3px 0 12px;
+            line-height: 1;
+            @media #{$xs-layout} {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+.video-area {
+    @media #{$xs-layout} {
+        &.pt-140 {
+            padding-top: 80px;
+        }
+        &.pb-145 {
+            padding-bottom: 85px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

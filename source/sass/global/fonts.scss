@@ -1,32 +1,21 @@
 @font-face {
-  font-family: "ProximaNova-Regular";
+  font-family: "Geometria";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src:
-    local("ProximaNova-Regular"),
-    url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Regular.woff") format("woff");
+    local("Geometria-Regular"),
+    url("../fonts/Geometria.woff2") format("woff2"),
+    url("../fonts/Geometria.woff") format("woff");
 }
 
 @font-face {
-  font-family: "ProximaNova-Bold";
+  font-family: "Geometria-Bold";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-display: swap;
   src:
-    local("ProximaNova-Bold"),
-    url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Mistral";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local("Mistral"),
-    url("../fonts/Mistral.woff2") format("woff2"),
-    url("../fonts/Mistral.woff") format("woff");
+    local("Geometria-Bold"),
+    url("../fonts/Geometria-Bold.woff2") format("woff2"),
+    url("../fonts/Geometria-Bold.woff") format("woff");
 }
