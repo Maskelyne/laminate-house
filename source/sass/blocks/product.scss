@@ -238,11 +238,6 @@
             }
         }
     }
-    &:hover {
-      &::before {
-        display: none;
-      }
-    }
 
     &:hover .hover-img {
         opacity: 1;
@@ -733,8 +728,8 @@
     height: 135px;
     position: absolute;
     content: "";
-    top: -39px;
-    right: -4px;
+    top: 0;
+    left: 0;
     background-image: url("../img/png/discount.png");
     background-repeat: no-repeat;
     z-index: 10;

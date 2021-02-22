@@ -2,12 +2,20 @@
   position: relative;
   height: 75vh;
 
+  @include mobile-width {
+    height: 50vh;
+  }
+
   .main-slider__image {
     img {
       width: 100%;
       height: 100vh;
       object-fit: cover;
       object-position: top center;
+
+      @include mobile-width {
+        height: 50vh;
+      }
     }
   }
 
@@ -74,8 +82,16 @@
     max-width: 500px;
   }
 
+  @include mobile-width {
+    max-width: 300px;
+  }
+
   img {
     max-width: 200px;
+
+    @include mobile-width {
+      max-width: 150px;
+    }
   }
 
   h2 {
@@ -90,6 +106,12 @@
       margin-bottom: 30px;
       font-size: 36px;
       line-height: 46px;
+    }
+
+    @include mobile-width {
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 28px;
     }
   }
 }
