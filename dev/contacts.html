@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">
+  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/icons.min.css">
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+
+<body>
+<div class="wrapper wrapper-2 wrapper-3">
+  
+<header class="header-area header-padding-1 section-padding-1 sticky-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-8">
+        <div class="main-menu main-menu-center">
+          <nav>
+            <ul>
+              <li class="active"><a href="#">Каталог</a>
+                <div class="dropdown-menu-style dropdown-width-1">
+                  <ul>
+                    <li>
+                      <ul>
+                        <li><a href="#">Ламинат</a></li>
+                        <li><a href="#">Плинтус</a></li>
+                        <li><a href="#">Подложка</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+        <div class="header-right-wrap">
+          <div class="same-style header-wishlist">
+            <a href="#">
+              <i class="negan-icon-switch"></i>
+              <span class="count-style">03</span>
+            </a>
+          </div>
+          <div class="same-style cart-wrap">
+            <a href="#" class="cart-active">
+              <i class="negan-icon-bag"></i>
+              <span class="count-style">02</span>
+            </a>
+          </div>
+          <div class="same-style header-search">
+            <a class="search-active" href="#"><i class="negan-icon-zoom"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header-small-mobile sticky-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-6">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+          </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="header-right-wrap">
+          <div class="same-style cart-wrap">
+            <a href="#" class="cart-active">
+              <i class="negan-icon-bag"></i>
+              <span class="count-style">2</span>
+            </a>
+          </div>
+          <div class="same-style mobile-off-canvas">
+            <a class="mobile-aside-button" href="#"><i class="negan-icon-menu-left"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile-off-canvas-active">
+  <a class="mobile-aside-close"><i class="negan-icon-simple-close"></i></a>
+  <div class="header-mobile-aside-wrap">
+    <div class="mobile-search">
+      <form class="search-form" action="#">
+        <input type="text" placeholder="Search entire store…">
+        <button class="button-search"><i class="negan-icon-zoom2"></i></button>
+      </form>
+    </div>
+    <div class="mobile-menu-wrap">
+      <div id="mobile-menu" class="slinky-mobile-menu text-left">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+              <ul>
+                <li><a href="index.html">Ламинат</a></li>
+                <li><a href="index-2.html">Плинтус</a></li>
+                <li><a href="index-3.html">Подложка</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+          <li>
+            <a href="shop-onsale.html">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Вопрос-ответ</a>
+          </li>
+          <li>
+            <a href="shop.html">Оплата и доставка</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-social-wrap">
+      <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+      <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+      <a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+      <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+      <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+  </div>
+</div>
+<!-- search start -->
+<div class="search-content-wrap main-search-active">
+  <a class="search-close"><i class="negan-icon-simple-close"></i></a>
+  <div class="search-content">
+    <p>Start typing and press Enter to search</p>
+    <form class="search-form" action="#">
+      <input type="text" placeholder="Search entire store…">
+      <button class="button-search"><i class="negan-icon-zoom2"></i></button>
+    </form>
+  </div>
+</div>
+<!-- mini cart start -->
+<div class="sidebar-cart-active">
+  <div class="sidebar-cart-all">
+    <a class="cart-close" href="#"><i class="negan-icon-simple-close"></i></a>
+    <div class="cart-content">
+      <h3>Shopping Cart</h3>
+      <ul>
+        <li class="single-product-cart">
+          <div class="cart-img">
+            <a href="#"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+          </div>
+          <div class="cart-title">
+            <h4><a href="#"> Flower Dress </a></h4>
+            <span>1 × £54.00</span>
+          </div>
+          <div class="cart-delete">
+            <a href="#">×</a>
+          </div>
+        </li>
+        <li class="single-product-cart">
+          <div class="cart-img">
+            <a href="#"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+          </div>
+          <div class="cart-title">
+            <h4><a href="#">Ruffled cotton top</a></h4>
+            <span>1 × £54.00</span>
+          </div>
+          <div class="cart-delete">
+            <a href="#">×</a>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-total">
+        <h4>Subtotal: <span>£ 108.00</span></h4>
+      </div>
+      <div class="cart-checkout-btn">
+        <a class="btn-hover cart-btn-style" href="cart.html">view cart</a>
+        <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="delivery-title delivery-title--black delivery-title--border delivery-title--nom delivery-title--bread">
+    <h2>Контакты</h2>
+    <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact-area contact-area-mrg">
+    <div class="contact-page-map">
+      <div id="contact-2">
+        <div class="ymap-container" style="background-image: url('assets/img/ymap/yandex-before.jpg');">
+          <div class="loader loader-default"></div>
+          <div id="map-yandex"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="ml-auto col-lg-6 col-md-12 col-12">
+          <div class="contact-info-area pr-40">
+            <div class="contact-info-bottom">
+              <div class="row">
+                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-3">
+                  <div class="single-contact-info mb-30 text-center footer-widget footer-widget--contacts">
+                    <div class="footer-phone">
+                      <a href="tel:+375172890339">+375 (17) 289-03-39</a>
+                      <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+                      <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+                    </div>
+                    <div class="contacts__mail">
+                      <a href="mailto:domlaminata@tut.by">
+                        <img src="assets/img/svg/con-email.svg" width="30" height="30" alt="E-mail">
+                        domlaminata@tut.by</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-4 footer-widget footer-widget--contacts">
+                  <div class="footer-time-work">
+                    <img src="assets/img/svg/con-clock.svg" width="21" height="21" alt="Режим работы">
+                    <p>Режим работы: <br> пн-вс: <span>9-00 до 18-00</span></p>
+                  </div>
+                  <div class="contacts__address">
+                    <a href="#">
+                      <img src="assets/img/svg/con-marker.svg" width="30" height="30" alt="Адрес">
+                      Минск, ул.Будславская, 19</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <h3> Let us know what you have in mind, and we'll get back to you in an instant!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris su</p>
+
+            <div class="contact-from-2">
+              <form id="contact-form" action="assets/mail-php/mail.php" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <input name="first_name" type="text" placeholder="Ваше имя">
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <input name="phone" type="text" placeholder="Номер телефона">
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <textarea name="message" placeholder="Введите сообщение"></textarea>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <button class="submit" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </form>
+              <p class="form-messege"></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pl-125">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-5 col-md-12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- All JS is here
+============================================ -->
+
+<!--&lt;!&ndash; jQuery JS &ndash;&gt;-->
+<!--<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>-->
+<!--&lt;!&ndash; Popper JS &ndash;&gt;-->
+<!--<script src="assets/js/popper.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap JS &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash; Plugins JS &ndash;&gt;-->
+<!--<script src="assets/js/plugins.js"></script>-->
+<!--&lt;!&ndash; Ajax Mail &ndash;&gt;-->
+<!--<script src="assets/js/ajax-mail.js"></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGM-62ap9R-huo50hJDn05j3x-mU9151Y"></script>-->
+<!--<script src="assets/js/map-3.js"></script>-->
+<!--&lt;!&ndash; Main JS &ndash;&gt;-->
+<!--<script src="assets/js/main.js"></script>-->
+
+
+
+<footer class="footer-area border-top-1 pt-60">
+  <div class="footer-top section-padding-1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="footer-sizes">
+          <div class="footer-widget footer-about mb-30">
+            <a href="#">
+              <img src="assets/img/svg/logo.svg" width="240" height="75" alt="Дом ламината">
+            </a>
+            <p>Зарегистрирован в Торговом реестре 12.01.2015 №171975</p>
+            <div class="footer-time-work">
+              <img src="assets/img/svg/icon-clock.svg" width="21" height="21" alt="Режим работы">
+              <p>Режим работы: <br> пн-вс: <span>9-00 до 18-00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-custom-2">
+          <div class="footer-widget mb-30">
+            <div class="footer-list">
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Ламинат</a></li>
+                <li><a href="#">Плинтус</a></li>
+                <li><a href="#">Подложка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-custom-2">
+          <div class="footer-widget mb-30">
+            <div class="footer-list text-bold">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-custom-col footer-blocks">
+          <div class="footer-widget mb-30">
+            <div class="footer-phone">
+              <a href="tel:+375172890339">+375 (17) 289-03-39</a>
+              <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+              <a href="tel:+375336971333">+375 (33) 697-13-33</a>
+            </div>
+            <ul class="footer-messengers__list">
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-viber.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Вайбер</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-tg.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-whatsapp.svg" width="30" height="30" alt="Viber">
+                  <span class="visually-hidden">Ватсапп</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="footer-widget footer-about mb-30">
+            <div class="footer-info">
+              <a href="mailto:domlaminata@tut.by">
+                <img src="assets/img/svg/icon-mail.svg" width="30" height="30" alt="E-mail">
+                domlaminata@tut.by</a>
+              <a href="#">
+                <img src="assets/img/svg/icon-maps.svg" width="30" height="30" alt="Адрес">
+                Минск, ул.Будславская, 19</a>
+            </div>
+            <ul class="footer-social__list">
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-vk.svg" width="30" height="30" alt="Вконтакте">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-inst.svg" width="30" height="30" alt="Инстаграм">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-youtube.svg" width="30" height="30" alt="Ютуб">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-ok.svg" width="30" height="30" alt="Одноклассники">
+                  <span class="visually-hidden">Одноклассники</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/img/svg/icon-fb.svg" width="30" height="30" alt="Фейсбук">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="developers">
+    <div class="developers__wrapper">
+      <a href="#">Разработка и продвижение
+        <img src="assets/img/svg/cmbox-logo.svg" width="93" height="33" alt="Digital-Агенство CmBox"/>
+      </a>
+    </div>
+  </section>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/vendor.js"></script>
+
+
+</body>
+
+</html>
