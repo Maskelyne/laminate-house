@@ -1455,6 +1455,7 @@
   .banner__wrapper {
     display: grid;
     grid-template-columns: repeat(2, auto);
+    overflow: hidden;
 
     @include tablet-width {
       grid-template-columns: 1fr;
@@ -1464,5 +1465,10 @@
   img {
     object-fit: cover;
     object-position: left top;
+    transition: all 0.3s linear;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
