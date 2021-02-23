@@ -336,11 +336,19 @@
                     padding: 9px 7px;
                 }
                 &:hover {
-                    border: 1px solid #343538;
+                  border-image: linear-gradient(100deg,#fb912f 0%,#dc5126 100%);
+                  border-image-slice: 1;
                 }
                 &.active {
-                    background-color: #343538;
-                    color: #fff;
+                  position: relative;
+                  background: #ffffff;
+                  background-clip: border-box;
+                  border: solid 1px transparent;
+                  color: rgba(52, 53, 56, 0.8);
+                  border-image: linear-gradient(100deg,#fb912f 0%,#dc5126 100%);
+                  border-image-slice: 1;
+
+
                 }
             }
         }

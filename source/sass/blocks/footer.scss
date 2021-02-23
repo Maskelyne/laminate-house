@@ -43,19 +43,19 @@
 }
 
 .footer-custom-col {
-    flex: 0 0 22%;
-    max-width: 22%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
+  flex: 0 0 22%;
+  max-width: 22%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
 
-    @media #{$md-layout} {
-      flex: 0 0 35%;
-	    max-width: 35%;
-    }
-    @include mobile-width {
-      display: none;
-    }
+  @media #{$md-layout} {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  @include mobile-width {
+    display: none;
+  }
 }
 
 .footer-custom-2 {
@@ -119,6 +119,7 @@
     img {
       max-width: 150px;
     }
+
     p {
       max-width: 280px;
       font-size: 12px;
@@ -128,145 +129,193 @@
       color: $Gray-rgba;
     }
   }
-    .footer-time-work {
-      display: grid;
-      grid-template-columns: 21px 73%;
-      grid-gap: 0 10px;
 
-      p {
-        margin: 0;
-        font-size: 14px;
-        line-height: 17px;
-        color: $Gray;
-      }
+  .footer-time-work {
+    display: grid;
+    grid-template-columns: 21px 73%;
+    grid-gap: 0 10px;
 
-      span {
-        color: $Orange;
-      }
-    }
-    .footer-list {
-        ul {
-            li {
-
-                &:first-child a {
-                  font-family: $Geometria-Bold;
-                  text-transform: uppercase;
-                  color: $Gray;
-                }
-                font-family: $Geometria;
-                font-size: 14px;
-                line-height: 17px;
-                margin-bottom: 20px;
-                @media #{$sm-layout} {
-                    margin: 0 0 10px;
-                }
-                @media #{$xs-layout} {
-                    margin: 0 0 8px;
-                }
-                a {
-                    color: $Gray-rgba;
-                    &:hover {
-                        color: $theme-color;
-                    }
-                }
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-    .text-bold ul li a {
-      font-family: $Geometria-Bold;
-      text-transform: uppercase;
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 17px;
       color: $Gray;
     }
-    &.footer-white {
-        .footer-title {
-            h3 {
-                color: #fff;
-            }
-        }
+
+    span {
+      color: $Orange;
     }
-    &.footer-map {
-        #footer-map  {
-            height: 221px;
+  }
+
+  .footer-list {
+    ul {
+      li {
+
+        &:first-child a {
+          font-family: $Geometria-Bold;
+          text-transform: uppercase;
+          color: $Gray;
         }
-    }
-    &.copyright-2 {
-        p {
-            font-size: 10px;
-            color: #343538;
-            font-family: $Geometria;
-            margin: 0;
-            text-transform: uppercase;
-            a {
-                color: #343538;
-                &:hover {
-                    color: $theme-color;
-                }
-            }
-            @media #{$xs-layout} {
-                text-align: center;
-            }
+
+        font-family: $Geometria;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 20px;
+        @media #{$sm-layout} {
+          margin: 0 0 10px;
         }
-    }
-    &.footer-social-2 {
-        display: flex;
-        justify-content: center;
+        @media #{$xs-layout} {
+          margin: 0 0 8px;
+        }
+
         a {
-            font-size: 10px;
-            margin: 0 15px 0 15px;
-            color: #343538;
-            &:hover {
-                color: $theme-color;
-            }
+          color: $Gray-rgba;
+
+          &:hover {
+            color: $theme-color;
+          }
         }
-    }
-    &.footer-address {
-        p {
-            font-size: 10px;
-            color: #343538;
-            font-family: $Geometria;
-            margin: 0;
-            text-transform: uppercase;
-            text-align: right;
-            @media #{$xs-layout} {
-                text-align: center;
-            }
+
+        &:last-child {
+          margin-bottom: 0;
         }
+      }
     }
-  &--contacts{
-    .footer-phone::before{
+  }
+
+  .text-bold ul li a {
+    font-family: $Geometria-Bold;
+    text-transform: uppercase;
+    color: $Gray;
+  }
+
+  &.footer-white {
+    .footer-title {
+      h3 {
+        color: #fff;
+      }
+    }
+  }
+
+  &.footer-map {
+    #footer-map {
+      height: 221px;
+    }
+  }
+
+  &.copyright-2 {
+    p {
+      font-size: 10px;
+      color: #343538;
+      font-family: $Geometria;
+      margin: 0;
+      text-transform: uppercase;
+
+      a {
+        color: #343538;
+
+        &:hover {
+          color: $theme-color;
+        }
+      }
+
+      @media #{$xs-layout} {
+        text-align: center;
+      }
+    }
+  }
+
+  &.footer-social-2 {
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-size: 10px;
+      margin: 0 15px 0 15px;
+      color: #343538;
+
+      &:hover {
+        color: $theme-color;
+      }
+    }
+  }
+
+  &.footer-address {
+    p {
+      font-size: 10px;
+      color: #343538;
+      font-family: $Geometria;
+      margin: 0;
+      text-transform: uppercase;
+      text-align: right;
+      @media #{$xs-layout} {
+        text-align: center;
+      }
+    }
+  }
+
+  &--contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .footer-phone {
+      display: flex;
+      padding-left: 57px;
+      flex-direction: column;
+      align-items: end;
+      @media(max-width: 1199px){
+        padding-left: 45px;
+      }
+    }
+
+    .footer-phone::before {
       width: 40px;
       height: 40px;
       background-size: 40px 40px;
       top: 50%;
       transform: translateY(-50%);
+      @media(max-width: 1199px){
+        top: 0;
+        transform: none;
+        height: 25px;
+        background-size: 25px 25px;
+      }
     }
+
     .footer-time-work {
       display: flex;
       align-items: center;
-
-      img{
+      @media(max-width: 1199px){
+        align-items: end;
+      }
+      img {
         margin-right: 10px;
         width: 40px;
         height: 40px;
+        @media(max-width: 1199px){
+          width: 27px;
+          height: 27px;
+        }
       }
     }
   }
 }
 
 .home-9-footer {
-    .footer-custom-col {
-        @media #{$lg-layout} {
-            flex: 0 0 33.333%;
-            max-width: 33.333%;
-        }
+  .footer-custom-col {
+    @media #{$lg-layout} {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
     }
+  }
 }
 
 
-
+.footer-time-work__wrap-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 
 
