@@ -1,27 +1,23 @@
 export function ymap () {
 
-//Переменная для включения/отключения индикатора загрузки
   var spinner = $('.ymap-container').children('.loader');
-//Переменная для определения была ли хоть раз загружена Яндекс.Карта (чтобы избежать повторной загрузки при наведении)
   var check_if_load = false;
-//Необходимые переменные для того, чтобы задать координаты на Яндекс.Карте
   var myMapTemp, myPlacemarkTemp;
 
-//Функция создания карты сайта и затем вставки ее в блок с идентификатором &#34;map-yandex&#34;
   function init () {
     var myMapTemp = new ymaps.Map("map-yandex", {
-      center: [55.730138, 37.594238], // координаты центра на карте
-      zoom: 7, // коэффициент приближения карты
-      controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
+      center: [53.960639, 27.544116], // координаты центра на карте
+      zoom: 14, // коэффициент приближения карты
+      controls: ['zoomControl', 'fullscreenControl']
     });
-    var myPlacemarkTemp = new ymaps.Placemark([55.730138, 37.594238], {
-      balloonContent: "Здесь может быть ваш адрес",
+    var myPlacemarkTemp = new ymaps.Placemark([53.960639, 27.544116], {
+      balloonContent: "Минск, ул.Будславская, 19",
     }, {
       // Опции.
       // Необходимо указать данный тип макета.
       iconLayout: 'default#imageWithContent',
       // Своё изображение иконки метки.
-      iconImageHref: 'img/map-marker.png',
+      iconImageHref: 'assets/img/ymap/map-marker.png',
       // Размеры метки.
       iconImageSize: [50, 50],
       // Смещение левого верхнего угла иконки относительно
