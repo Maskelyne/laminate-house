@@ -1698,6 +1698,12 @@
   .shop-topbar-left {
     align-items: center;
 
+    @media(max-width: 575px) {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
 
     a {
       font-style: normal;
@@ -1710,12 +1716,20 @@
 
     .active {
       color: #E25F27 !important;
+      @media(max-width: 767px) {
+        text-decoration: underline;
+      }
+
     }
   }
 
   .shop-topbar-sort {
     display: flex;
     align-items: center;
+    @media(max-width: 575px) {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
     p {
       margin-bottom: 0;
@@ -1746,7 +1760,9 @@
 
     li {
       margin-right: 30px;
-
+      @media(max-width: 575px) {
+        margin-right: 10px;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -1808,14 +1824,19 @@
   ul {
     display: flex;
     align-items: center;
-
+    @media(max-width: 575px) {
+      flex-wrap: wrap;
+    }
     li {
       margin-right: 50px;
-      &:last-child{
+      @media(max-width: 575px) {
+        margin-right: 20px;
+      }
+      &:last-child {
         margin-right: 0;
       }
 
-      a{
+      a {
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -1823,10 +1844,12 @@
         color: #343538;
         opacity: 0.8;
       }
-      .active{
+
+      .active {
         position: relative;
-        color:#E25F27;
-        &:after{
+        color: #E25F27;
+
+        &:after {
           position: absolute;
           content: '';
           bottom: -1px;
@@ -1839,8 +1862,9 @@
     }
   }
 }
-.shop-topbar-right{
-  a{
+
+.shop-topbar-right {
+  a {
     font-style: normal;
     font-weight: bold !important;
     font-size: 16px !important;
@@ -1848,6 +1872,24 @@
     color: #343538 !important;
   }
 }
-.shop-top-bar .shop-topbar-right .filter-active a::after{
-  top:4px !important;
+
+.shop-top-bar .shop-topbar-right .filter-active a::after {
+  top: 1px !important;
+}
+
+.shop-top-bar.shop-top-bar-flex {
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-top-bar.shop-top-bar-flex {
+    display: flex !important;
+    gap: 30px;
+  }
+}
+.product-filter-wrapper{
+  @media(max-width: 575px) {
+    padding: 0;
+  }
 }
