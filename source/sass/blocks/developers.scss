@@ -14,6 +14,8 @@
     @include tablet-width {
       font-size: 12px;
       line-height: 18px;
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 0 10px;
     }
   }
 }

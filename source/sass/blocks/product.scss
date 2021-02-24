@@ -1677,15 +1677,19 @@
     @include tablet-width {
       grid-template-columns: 1fr;
     }
+
+    a {
+      overflow: hidden;
+    }
   }
 
   img {
     object-fit: cover;
     object-position: left top;
-    transition: all 0.3s linear;
+    transition: all 0.4s linear;
 
     &:hover {
-      transform: scale(1.02);
+      transform: scale(1.04);
     }
   }
 }
