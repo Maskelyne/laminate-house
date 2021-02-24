@@ -3,7 +3,7 @@
 
 @include('general/head.html')
 
-<body class="asd">
+<body>
 <div class="wrapper blog wrapper-2 wrapper-3">
   @include('components/header.html')
   <div class="delivery-title delivery-title--black delivery-title--bread"
@@ -91,8 +91,10 @@
             </div>
             <div class="blog-single__pag">
               <ul>
-                <li><a href="#" class="blog-single__pag-prev" aria-label="prev"><img src="assets/img/svg/arrow.svg" alt="prev"></a></li>
-                <li><a href="#" class="blog-single__pag-next" aria-label="next"><img src="assets/img/svg/arrow.svg" alt="next"></a></li>
+                <li><a href="#" class="blog-single__pag-prev" aria-label="prev"><img src="assets/img/svg/arrow.svg"
+                                                                                     alt="prev"></a></li>
+                <li><a href="#" class="blog-single__pag-next" aria-label="next"><img src="assets/img/svg/arrow.svg"
+                                                                                     alt="next"></a></li>
               </ul>
             </div>
           </div>
@@ -100,7 +102,17 @@
       </div>
     </div>
   </div>
-
+  <div class="blog-single__list">
+    <div class="container">
+      <h3>Другие статьи :</h3>
+      <ul>
+        <li><a href="#" class="active">Разница между ламинатом и паркетом</a></li>
+        <li><a href="#">Разница между ламинатом и паркетом</a></li>
+        <li><a href="#">Разница между ламинатом и паркетом</a></li>
+        <li><a href="#">Разница между ламинатом и паркетом</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 @include('components/footer.html')

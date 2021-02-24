@@ -31,6 +31,21 @@
       color: #343538;
     }
   }
+  &--left{
+    h2{
+      text-align: left;
+    }
+    .breadcrumbs ul{
+      justify-content: end;
+    }
+    li{
+      &:first-child{
+        a{
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 .delivery__wrapper {
