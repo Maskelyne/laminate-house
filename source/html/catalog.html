@@ -23,11 +23,11 @@
       </div>
     </div>
   </div>
-  <div class="shop-page-area pt-80 pb-80">
+  <div class="shop-page-area pt-40 pb-80">
     <div class="container-fluid">
       <div class="shop-top-bar shop-top-bar-flex mb-40">
         <div class="shop-topbar-left">
-          <p>Показать:</p>
+          <p class="shop-topbar-left__title">Показать:</p>
           <div class="page-show">
             <ul>
               <li><a class="active" href="#">12</a></li>
@@ -36,94 +36,171 @@
             </ul>
           </div>
         </div>
+        <div class="shop-topbar-sort">
+          <p>Сортировать по:</p>
+          <div class="page-show">
+            <ul class="sort-list">
+              <li><a href="#">Названию</a></li>
+              <li class="price-arrow-up">
+                <a href="#">Цене</a>
+                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" d="M3.64645 14.3536C3.84171 14.5488 4.15829 14.5488 4.35355 14.3536L7.53553 11.1716C7.7308 10.9763 7.7308 10.6597 7.53553 10.4645C7.34027 10.2692 7.02369 10.2692 6.82843 10.4645L4 13.2929L1.17157 10.4645C0.976311 10.2692 0.659728 10.2692 0.464466 10.4645C0.269204 10.6597 0.269204 10.9763 0.464466 11.1716L3.64645 14.3536ZM3.5 0V14H4.5V0L3.5 0Z" fill="#343538"/>
+              </svg></li>
+              <li class="active"><a href="#" >Цене</a>
+                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" d="M3.64645 14.3536C3.84171 14.5488 4.15829 14.5488 4.35355 14.3536L7.53553 11.1716C7.7308 10.9763 7.7308 10.6597 7.53553 10.4645C7.34027 10.2692 7.02369 10.2692 6.82843 10.4645L4 13.2929L1.17157 10.4645C0.976311 10.2692 0.659728 10.2692 0.464466 10.4645C0.269204 10.6597 0.269204 10.9763 0.464466 11.1716L3.64645 14.3536ZM3.5 0V14H4.5V0L3.5 0Z" fill="#343538"/>
+              </svg></li>
+              <li><a href="#">Рейтингу</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="shop-topbar-cat">
+          <div class="page-show">
+            <ul>
+              <li><a class="active" href="#">Ламинат</a></li>
+              <li><a href="#">Плинтус</a></li>
+              <li><a href="#">Подложка</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="shop-topbar-right">
           <div class="filter-active">
-            <a href="#">filter</a>
+            <a href="#">фильтр</a>
           </div>
         </div>
       </div>
-      <div class="product-filter-wrapper">
+      <form class="product-filter-wrapper">
         <div class="row">
           <!-- Product Filter -->
           <div class="custom-col-5 mb-30">
             <div class="product-sort">
               <div class="single-filter-title">
-                <h5>Sort By</h5>
+                <h5>Производитель</h5>
               </div>
-              <ul class="sort-by">
-                <li><a href="#">Default sorting</a></li>
-                <li><a href="#">Sort by popularity</a></li>
-                <li><a href="#">Sort by average rating</a></li>
-                <li><a href="#">Sort by newness</a></li>
-                <li><a href="#">Sort by price: low to high</a></li>
-                <li><a href="#">Sort by price: high to low</a></li>
-              </ul>
+              <div>
+                <div class="form-group__wrap">
+                  <div class="form-group">
+                    <input type="checkbox" id="a">
+                    <label for="a">Ликвидация (ГЕРМАНИЯ)</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="b">
+                    <label for="b">КРОНОСТАР</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="s">
+                    <label for="s">QUICK-STEP</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="d">
+                    <label for="d">"EURO HOME" ПР-ВА KRONOORIGINAL</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="e">
+                    <label for="e">KRONOTEX</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="f">
+                    <label for="f">SWISS KRONO (ГЕРМАНИЯ)</label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product Filter -->
           <div class="custom-col-5 mb-30">
             <div class="product-price-filter">
               <div class="single-filter-title">
-                <h5>Price</h5>
+                <h5>Класс</h5>
               </div>
-              <ul>
-                <li><a href="#">£0.00 - £50.00</a></li>
-                <li><a href="#">£50.00 - £100.00</a></li>
-                <li><a href="#">£100.00 - £150.00</a></li>
-                <li><a href="#">£150.00 - £200.00</a></li>
-                <li><a href="#">£200.00+</a></li>
-              </ul>
+              <div class="form-group__wrap">
+                <div class="form-group">
+                  <input type="checkbox" id="ab">
+                  <label for="ab">31</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="bs">
+                  <label for="bs">33</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="sd">
+                  <label for="sd">33</label>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product Filter -->
           <div class="custom-col-5 mb-30">
             <div class="product-size">
               <div class="single-filter-title">
-                <h5>Size</h5>
+                <h5>Толщина панели</h5>
               </div>
-              <ul>
-                <li><a href="#">L</a></li>
-                <li><a href="#">M</a></li>
-                <li><a href="#">X</a></li>
-                <li><a href="#">XL</a></li>
-                <li><a href="#">XXL</a></li>
-              </ul>
+              <div class="form-group__wrap">
+                <div class="form-group">
+                  <input type="checkbox" id="abs">
+                  <label for="abs">6 мм</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="bsd">
+                  <label for="bsd">6 мм</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="sdad">
+                  <label for="sdad">6 мм</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="sdaa">
+                  <label for="sdaa">6 мм</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="sdas">
+                  <label for="sdas">6 мм</label>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Product Filter -->
           <div class="custom-col-5 mb-30">
             <div class="product-color">
               <div class="single-filter-title">
-                <h5>Color</h5>
+                <h5>Наличие фаски</h5>
               </div>
-              <ul>
-                <li><a href="#"><span title="Blue" class="swatch-anchor blue">Blue</span><span
-                  class="color-text">Blue</span></a></li>
-                <li><a href="#"><span title="Green" class="swatch-anchor green">Green</span><span class="color-text">Green</span></a>
-                </li>
-                <li><a href="#"><span title="Orange" class="swatch-anchor orange">Orange</span><span class="color-text">Orange</span></a>
-                </li>
-                <li><a href="#"><span title="Pinkish" class="swatch-anchor pinkish">Pinkish</span><span
-                  class="color-text">Pinkish</span></a></li>
-                <li><a href="#"><span title="Vista Blue" class="swatch-anchor vista">Vista Blue</span><span
-                  class="color-text">Vista Blue</span></a></li>
-              </ul>
+              <div class="form-group__wrap">
+                <div class="form-group">
+                  <input type="checkbox" id="absdf">
+                  <label for="absdf">нет</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="bsdwq">
+                  <label for="bsdwq">4V-фаска</label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="custom-col-5 mb-30">
             <div class="product-tag">
               <div class="single-filter-title">
-                <h5>Tags</h5>
+                <h5>цена, руб</h5>
               </div>
-              <ul>
-                <li><a href="#">All,</a></li>
-                <li><a href="#">Chair,</a></li>
-                <li><a href="#">Furniture</a></li>
-              </ul>
+              <fieldset id="mse2_ms|price" class="custom-mFilter__slider">
+                <div class="mse2_number_slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+                <div class="mse_number_inputs">
+                  <div class="custom-mFilter__input">
+                    <label for="mse2_ms|price_0">От
+                      <input type="text" name="ms|price" id="mse2_ms|price_0" value="0" class="form-control input-sm">
+                    </label>
+                  </div>
+                  <div class="custom-mFilter__input">
+                  <label for="mse2_ms|price_1">До
+                    <input type="text" name="ms|price" id="mse2_ms|price_1" value="8" class="form-control input-sm">
+                  </label>
+                </div>
+                </div>
+              </fieldset>
             </div>
           </div>
         </div>
-      </div>
+      </form>
       <div class="product-area-wrap">
         <div class="row">
           <form class="custom-col-5">
@@ -135,57 +212,12 @@
                 <div class="product-action">
                   <div class="pro-same-action pro-wishlist-icon">
                     <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
-                      <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11.5" cy="12.5" r="8.5" fill="white" fill-opacity="0.25"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" fill="white"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" stroke="white"/>
-                      </svg>
+                      <i class="negan-icon-zoom"></i>
                     </a>
                   </div>
                   <div class="pro-same-action pro-switch-icon">
                     <a title="Add To Compare"  class="add-compare-img" href="#">
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.4596 9.45962C22.7135 9.20578 22.7135 8.79422 22.4596 8.54038L18.323 4.40381C18.0692 4.14997 17.6576 4.14997 17.4038 4.40381C17.15 4.65765 17.15 5.0692 17.4038 5.32304L21.0808 9L17.4038 12.677C17.15 12.9308 17.15 13.3424 17.4038 13.5962C17.6576 13.85 18.0692 13.85 18.323 13.5962L22.4596 9.45962ZM6 9.65L22 9.65V8.35L6 8.35V9.65Z" fill="white"/>
-                        <path d="M5.54038 17.5404C5.28654 17.7942 5.28654 18.2058 5.54038 18.4596L9.67696 22.5962C9.9308 22.85 10.3424 22.85 10.5962 22.5962C10.85 22.3424 10.85 21.9308 10.5962 21.677L6.91924 18L10.5962 14.323C10.85 14.0692 10.85 13.6576 10.5962 13.4038C10.3424 13.15 9.9308 13.15 9.67696 13.4038L5.54038 17.5404ZM22 17.35L6 17.35V18.65L22 18.65V17.35Z" fill="white"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-quickview">
-                  <button class="button-white">Купить</button>
-                </div>
-              </div>
-              <div class="product-content text-center">
-                <h3><a href="product-details.html">"1440"-31 КЛ./6ММ. (ГЕРМАНИЯ)</a></h3>
-                <div class="product-price">
-                  <span>19, 50 р. (м<sup>2</sup>)</span>
-                  <span>13, 50 р. (м<sup>2</sup>)</span>
-                </div>
-              </div>
-            </div>
-          </form>
-          <form class="custom-col-5">
-            <div class="product-wrap  mb-40">
-              <div class="product-img default-overlay item-overlay-1">
-                <a href="product-details.html">
-                  <img class="default-img" src="assets/img/jpg/product-1.jpg" alt="">
-                </a>
-                <div class="product-action">
-                  <div class="pro-same-action pro-wishlist-icon">
-                    <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
-                      <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11.5" cy="12.5" r="8.5" fill="white" fill-opacity="0.25"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" fill="white"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" stroke="white"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="pro-same-action pro-switch-icon">
-                    <a title="Add To Compare"  class="add-compare-img" href="#">
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.4596 9.45962C22.7135 9.20578 22.7135 8.79422 22.4596 8.54038L18.323 4.40381C18.0692 4.14997 17.6576 4.14997 17.4038 4.40381C17.15 4.65765 17.15 5.0692 17.4038 5.32304L21.0808 9L17.4038 12.677C17.15 12.9308 17.15 13.3424 17.4038 13.5962C17.6576 13.85 18.0692 13.85 18.323 13.5962L22.4596 9.45962ZM6 9.65L22 9.65V8.35L6 8.35V9.65Z" fill="white"/>
-                        <path d="M5.54038 17.5404C5.28654 17.7942 5.28654 18.2058 5.54038 18.4596L9.67696 22.5962C9.9308 22.85 10.3424 22.85 10.5962 22.5962C10.85 22.3424 10.85 21.9308 10.5962 21.677L6.91924 18L10.5962 14.323C10.85 14.0692 10.85 13.6576 10.5962 13.4038C10.3424 13.15 9.9308 13.15 9.67696 13.4038L5.54038 17.5404ZM22 17.35L6 17.35V18.65L22 18.65V17.35Z" fill="white"/>
-                      </svg>
+                      <i class="negan-icon-switch"></i>
                     </a>
                   </div>
                 </div>
@@ -204,44 +236,6 @@
           </form>
           <form class="custom-col-5">
             <div class="product-wrap discount mb-40">
-              <div class="product-img default-overlay item-overlay-1">
-                <a href="product-details.html">
-                  <img class="default-img" src="assets/img/jpg/product-2.jpg" alt="">
-                </a>
-                <div class="product-action">
-                  <div class="pro-same-action pro-wishlist-icon">
-                    <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
-                      <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11.5" cy="12.5" r="8.5" fill="white" fill-opacity="0.25"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" fill="white"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" stroke="white"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="pro-same-action pro-switch-icon">
-                    <a title="Add To Compare"  class="add-compare-img" href="#">
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.4596 9.45962C22.7135 9.20578 22.7135 8.79422 22.4596 8.54038L18.323 4.40381C18.0692 4.14997 17.6576 4.14997 17.4038 4.40381C17.15 4.65765 17.15 5.0692 17.4038 5.32304L21.0808 9L17.4038 12.677C17.15 12.9308 17.15 13.3424 17.4038 13.5962C17.6576 13.85 18.0692 13.85 18.323 13.5962L22.4596 9.45962ZM6 9.65L22 9.65V8.35L6 8.35V9.65Z" fill="white"/>
-                        <path d="M5.54038 17.5404C5.28654 17.7942 5.28654 18.2058 5.54038 18.4596L9.67696 22.5962C9.9308 22.85 10.3424 22.85 10.5962 22.5962C10.85 22.3424 10.85 21.9308 10.5962 21.677L6.91924 18L10.5962 14.323C10.85 14.0692 10.85 13.6576 10.5962 13.4038C10.3424 13.15 9.9308 13.15 9.67696 13.4038L5.54038 17.5404ZM22 17.35L6 17.35V18.65L22 18.65V17.35Z" fill="white"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-quickview">
-                  <button class="button-white">Купить</button>
-                </div>
-              </div>
-              <div class="product-content text-center">
-                <h3><a href="product-details.html">"1440"-31 КЛ./6ММ. (ГЕРМАНИЯ)</a></h3>
-                <div class="product-price">
-                  <span>19, 50 р. (м<sup>2</sup>)</span>
-                  <span>13, 50 р. (м<sup>2</sup>)</span>
-                </div>
-              </div>
-            </div>
-          </form>
-          <form class="custom-col-5">
-            <div class="product-wrap  mb-40">
               <div class="product-img default-overlay item-overlay-1">
                 <a href="product-details.html">
                   <img class="default-img" src="assets/img/jpg/product-3.jpg" alt="">
@@ -249,19 +243,12 @@
                 <div class="product-action">
                   <div class="pro-same-action pro-wishlist-icon">
                     <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
-                      <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11.5" cy="12.5" r="8.5" fill="white" fill-opacity="0.25"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" fill="white"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" stroke="white"/>
-                      </svg>
+                      <i class="negan-icon-zoom"></i>
                     </a>
                   </div>
                   <div class="pro-same-action pro-switch-icon">
                     <a title="Add To Compare"  class="add-compare-img" href="#">
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.4596 9.45962C22.7135 9.20578 22.7135 8.79422 22.4596 8.54038L18.323 4.40381C18.0692 4.14997 17.6576 4.14997 17.4038 4.40381C17.15 4.65765 17.15 5.0692 17.4038 5.32304L21.0808 9L17.4038 12.677C17.15 12.9308 17.15 13.3424 17.4038 13.5962C17.6576 13.85 18.0692 13.85 18.323 13.5962L22.4596 9.45962ZM6 9.65L22 9.65V8.35L6 8.35V9.65Z" fill="white"/>
-                        <path d="M5.54038 17.5404C5.28654 17.7942 5.28654 18.2058 5.54038 18.4596L9.67696 22.5962C9.9308 22.85 10.3424 22.85 10.5962 22.5962C10.85 22.3424 10.85 21.9308 10.5962 21.677L6.91924 18L10.5962 14.323C10.85 14.0692 10.85 13.6576 10.5962 13.4038C10.3424 13.15 9.9308 13.15 9.67696 13.4038L5.54038 17.5404ZM22 17.35L6 17.35V18.65L22 18.65V17.35Z" fill="white"/>
-                      </svg>
+                      <i class="negan-icon-switch"></i>
                     </a>
                   </div>
                 </div>
@@ -282,24 +269,17 @@
             <div class="product-wrap discount mb-40">
               <div class="product-img default-overlay item-overlay-1">
                 <a href="product-details.html">
-                  <img class="default-img" src="assets/img/jpg/product-1.jpg" alt="">
+                  <img class="default-img" src="assets/img/jpg/product-3.jpg" alt="">
                 </a>
                 <div class="product-action">
                   <div class="pro-same-action pro-wishlist-icon">
                     <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
-                      <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11.5" cy="12.5" r="8.5" fill="white" fill-opacity="0.25"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" fill="white"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" stroke="white"/>
-                      </svg>
+                      <i class="negan-icon-zoom"></i>
                     </a>
                   </div>
                   <div class="pro-same-action pro-switch-icon">
                     <a title="Add To Compare"  class="add-compare-img" href="#">
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.4596 9.45962C22.7135 9.20578 22.7135 8.79422 22.4596 8.54038L18.323 4.40381C18.0692 4.14997 17.6576 4.14997 17.4038 4.40381C17.15 4.65765 17.15 5.0692 17.4038 5.32304L21.0808 9L17.4038 12.677C17.15 12.9308 17.15 13.3424 17.4038 13.5962C17.6576 13.85 18.0692 13.85 18.323 13.5962L22.4596 9.45962ZM6 9.65L22 9.65V8.35L6 8.35V9.65Z" fill="white"/>
-                        <path d="M5.54038 17.5404C5.28654 17.7942 5.28654 18.2058 5.54038 18.4596L9.67696 22.5962C9.9308 22.85 10.3424 22.85 10.5962 22.5962C10.85 22.3424 10.85 21.9308 10.5962 21.677L6.91924 18L10.5962 14.323C10.85 14.0692 10.85 13.6576 10.5962 13.4038C10.3424 13.15 9.9308 13.15 9.67696 13.4038L5.54038 17.5404ZM22 17.35L6 17.35V18.65L22 18.65V17.35Z" fill="white"/>
-                      </svg>
+                      <i class="negan-icon-switch"></i>
                     </a>
                   </div>
                 </div>
@@ -317,27 +297,82 @@
             </div>
           </form>
           <form class="custom-col-5">
-            <div class="product-wrap  mb-40">
+            <div class="product-wrap discount mb-40">
               <div class="product-img default-overlay item-overlay-1">
                 <a href="product-details.html">
-                  <img class="default-img" src="assets/img/jpg/product-2.jpg" alt="">
+                  <img class="default-img" src="assets/img/jpg/product-3.jpg" alt="">
                 </a>
                 <div class="product-action">
                   <div class="pro-same-action pro-wishlist-icon">
                     <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
-                      <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11.5" cy="12.5" r="8.5" fill="white" fill-opacity="0.25"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" fill="white"/>
-                        <path d="M23.8852 25.2968L17.7668 18.8782C19.3274 17.2994 20.2942 15.1229 20.2942 12.7226C20.2942 7.9127 16.4154 4 11.6471 4C6.87885 4 3 7.9127 3 12.7226C3 17.5325 6.87885 21.4452 11.6471 21.4452C13.7401 21.4452 15.661 20.6904 17.1582 19.4381L23.2915 25.8725C23.3722 25.9576 23.4801 26 23.5884 26C23.6913 26 23.7938 25.9614 23.8737 25.8841C24.0376 25.725 24.0425 25.4621 23.8852 25.2968ZM11.6471 20.6144C7.33303 20.6144 3.82353 17.0743 3.82353 12.7226C3.82353 8.37084 7.33303 4.83072 11.6471 4.83072C15.9612 4.83072 19.4707 8.37084 19.4707 12.7226C19.4707 17.0743 15.9608 20.6144 11.6471 20.6144Z" stroke="white"/>
-                      </svg>
+                      <i class="negan-icon-zoom"></i>
                     </a>
                   </div>
                   <div class="pro-same-action pro-switch-icon">
                     <a title="Add To Compare"  class="add-compare-img" href="#">
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.4596 9.45962C22.7135 9.20578 22.7135 8.79422 22.4596 8.54038L18.323 4.40381C18.0692 4.14997 17.6576 4.14997 17.4038 4.40381C17.15 4.65765 17.15 5.0692 17.4038 5.32304L21.0808 9L17.4038 12.677C17.15 12.9308 17.15 13.3424 17.4038 13.5962C17.6576 13.85 18.0692 13.85 18.323 13.5962L22.4596 9.45962ZM6 9.65L22 9.65V8.35L6 8.35V9.65Z" fill="white"/>
-                        <path d="M5.54038 17.5404C5.28654 17.7942 5.28654 18.2058 5.54038 18.4596L9.67696 22.5962C9.9308 22.85 10.3424 22.85 10.5962 22.5962C10.85 22.3424 10.85 21.9308 10.5962 21.677L6.91924 18L10.5962 14.323C10.85 14.0692 10.85 13.6576 10.5962 13.4038C10.3424 13.15 9.9308 13.15 9.67696 13.4038L5.54038 17.5404ZM22 17.35L6 17.35V18.65L22 18.65V17.35Z" fill="white"/>
-                      </svg>
+                      <i class="negan-icon-switch"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <button class="button-white">Купить</button>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">"1440"-31 КЛ./6ММ. (ГЕРМАНИЯ)</a></h3>
+                <div class="product-price">
+                  <span>19, 50 р. (м<sup>2</sup>)</span>
+                  <span>13, 50 р. (м<sup>2</sup>)</span>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="custom-col-5">
+            <div class="product-wrap discount mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/jpg/product-3.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
+                      <i class="negan-icon-zoom"></i>
+                    </a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare"  class="add-compare-img" href="#">
+                      <i class="negan-icon-switch"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="product-quickview">
+                  <button class="button-white">Купить</button>
+                </div>
+              </div>
+              <div class="product-content text-center">
+                <h3><a href="product-details.html">"1440"-31 КЛ./6ММ. (ГЕРМАНИЯ)</a></h3>
+                <div class="product-price">
+                  <span>19, 50 р. (м<sup>2</sup>)</span>
+                  <span>13, 50 р. (м<sup>2</sup>)</span>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="custom-col-5">
+            <div class="product-wrap discount mb-40">
+              <div class="product-img default-overlay item-overlay-1">
+                <a href="product-details.html">
+                  <img class="default-img" src="assets/img/jpg/product-3.jpg" alt="">
+                </a>
+                <div class="product-action">
+                  <div class="pro-same-action pro-wishlist-icon">
+                    <a title="Add To Wishlist" class="quick-buy-img" data-toggle="modal" data-target="#exampleModal" href="wishlist.html">
+                      <i class="negan-icon-zoom"></i>
+                    </a>
+                  </div>
+                  <div class="pro-same-action pro-switch-icon">
+                    <a title="Add To Compare"  class="add-compare-img" href="#">
+                      <i class="negan-icon-switch"></i>
                     </a>
                   </div>
                 </div>
