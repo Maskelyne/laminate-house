@@ -1,0 +1,155 @@
+.result-search {
+  padding: 40px 0;
+
+  .pro-pagination-style{
+    margin-top: 60px;
+  }
+
+  &__title {
+    font-family: 'Geometria', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #343538;
+    margin-bottom: 40px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__desc {
+    margin-left: 60px;
+  }
+
+  &__item {
+    display: flex;
+    border: 1px solid #E0E0E0;
+    padding: 30px 60px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    .btn--orange {
+      padding: 13px 50px;
+      font-family: 'Geometria', sans-serif;
+      margin-right: 43px;
+    }
+
+    .btn__compare {
+      display: flex;
+      align-items: center;
+
+      .negan-icon-switch {
+        margin-bottom: -4px;
+        font-size: 20px;
+      }
+
+      span {
+        font-family: 'Geometria', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: lowercase;
+        color: #343538;
+        opacity: 0.7;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__img {
+    width: 135px;
+    height: 180px;
+  }
+
+  h2 {
+    font-family: "Geometria", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    color: #000000;
+    transition: .2s;
+
+    &:hover {
+      color: #E25F27;
+      transition: .2s;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+
+    .product-price {
+      margin-right: 60px;
+    }
+
+    .product-order {
+      margin-right: 60px;
+    }
+  }
+}
+
+.product-order {
+  span {
+    display: flex;
+    gap: 0 5px;
+    align-items: center;
+    font-family: Geometria, arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #be0e0e;
+  }
+
+  img {
+    max-width: 13px;
+  }
+
+
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:10px;
+  span:first-child {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    font-family: Geometria, arial, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(52, 52, 56, .7);
+
+    &:before {
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      background-color: rgba(52, 53, 56, .7);
+    }
+  }
+
+  span {
+    font-family: Geometria-Bold, arial, sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(206, 0, 0, .8);
+  }
+}
+
+.wrapper {
+  flex-grow: 1;
+}

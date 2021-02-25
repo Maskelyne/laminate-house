@@ -1,7 +1,7 @@
 /*-------- 23. Faq page ---------*/
 
 .faq-accordion {
-    border: 1px solid #e8e8e8;
+    border: 1px solid #E0E0E0;
     border-radius: 5px;
     background-color: #fff;
     &.actives {
@@ -13,9 +13,14 @@
             font-size: 14px;
             font-weight: 700;
             margin: 0;
-            background-color: #fff;
+          background: #F9F9F9;
             a {
-                color: #343538;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 20px;
+              font-family: "Geometria", sans-serif;
+              color: #343538;
                 display: block;
                 position: relative;
                 padding: 20px 30px;
@@ -25,7 +30,7 @@
                         position: absolute;
                         right: 13px;
                         height: 2px;
-                        background-color: #343538;
+                        background-color: #E25F27;
                         width: 12px;
                         top: 50%;
                         margin-top: -2px;
@@ -37,7 +42,7 @@
                         width: 2px;
                         height: 12px;
                         position: absolute;
-                        background-color: #343538;
+                        background-color: #E25F27;
                         top: 49%;
                         transform: translateY(-50%);
                         right: 18px;
@@ -48,7 +53,7 @@
                     position: absolute;
                     right: 13px;
                     height: 2px;
-                    background-color: #343538;
+                    background-color: #E25F27;
                     width: 12px;
                     top: 50%;
                     margin-top: -2px;
@@ -119,6 +124,7 @@
 
 
 .single-faq-wrap {
+  padding: 60px 0;
     @media #{$md-layout} {
         &.pt-120 {
             padding-top: 70px;

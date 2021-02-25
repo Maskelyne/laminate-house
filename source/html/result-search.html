@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+
+@include('general/head.html')
+
+<body>
+<div class="wrapper  wrapper-2 wrapper-3">
+  @include('components/header.html')
+  <div class="delivery-title delivery-title--black delivery-title--bread"
+       style="background-image: url(../assets/img/jpg/search-banner.jpg); background-repeat: no-repeat;background-size: cover;">
+    <h2>Результаты поиска</h2>
+    <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Результаты поиска</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="result-search">
+    <div class="container">
+      <p class="result-search__title">По запросу <span>“Дуб”</span> найдено 2 товара:</p>
+      <div class="result-search__list">
+        <form action="" class="result-search__item">
+          <a href="#"><img class="result-search__img" src="assets/img/jpg/product-1.jpg  " alt=""></a>
+          <div class="result-search__desc">
+            <a href="#"><h2>4766 ДУБ ТЕМНЫЙ ПЕТЕРСОН ПР-ВО KRONOTEX ГЕРМАНИЯ</h2></a>
+            <div class="result-search__meta">
+              <div class="product-price">
+                <span>19, 50 р. (м<sup>2</sup>)</span>
+                <span>13, 50 р. (м<sup>2</sup>)</span>
+              </div>
+              <div class="product-order">
+                  <span>
+                    <img src="assets/img/svg/icon-pen.svg" width="13" height="18" alt="Под заказ">
+                    Под заказ
+                  </span>
+              </div>
+              <div class="result-search__rating">
+                <div class="reviews__stars">
+                  <span class="star-rating star-rating-results">
+                    <img src="assets/img/png/stars.png" alt="">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="result-search__btns">
+              <button class="btn--orange">В корзину</button>
+              <a class="btn__compare" href="#"><i class="negan-icon-switch"></i> <span>в сравнение</span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="pro-pagination-style text-center">
+      <ul>
+        <li><a class="active" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+
+</body>
+
+</html>
