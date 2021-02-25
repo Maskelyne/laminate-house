@@ -6,7 +6,7 @@
 <body>
 <div class="wrapper blog wrapper-2 wrapper-3">
   @include('components/header.html')
-  <div class="delivery-title " style="background-image: url(../assets/img/jpg/catalog-banner.jpg); background-repeat: no-repeat;background-size: cover;">
+  <div class="delivery-title " style="background-image: url(../assets/img/jpg/cart-banner.jpg); background-repeat: no-repeat;background-size: cover;">
     <h2>Корзина</h2>
     <div class="breadcrumbs">
       <ul>
@@ -19,13 +19,13 @@
       </ul>
     </div>
   </div>
-  <div class="cart-main-area pt-60 pb-60">
+  <div class="cart-main-area">
     <div class="container">
       <div class="cart-empty-content text-center">
-        <i class="negan-icon-cart-modern"></i>
-        <p>Your cart is currently empty.</p>
+        <p>ваша корзина пуста</p>
+        <img src="assets/img/svg/shopping-cart.svg" alt="">
         <div class="empty-btn">
-          <a href="#">Return to shop</a>
+          <a href="#" class="btn--incomplete">Вернуться в каталог</a>
         </div>
       </div>
     </div>
