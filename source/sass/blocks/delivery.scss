@@ -1,6 +1,6 @@
 .delivery-title {
   padding: 70px 0;
-
+  background-repeat: no-repeat;
   h2 {
     font-family: $Geometria-Bold;
     font-size: 32px;
@@ -52,7 +52,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 60px 30px 0 30px;
 
   @include mobile-width {
     padding: 0 15px;
