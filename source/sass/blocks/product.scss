@@ -406,35 +406,35 @@
       }
     }
 
-    .product-price {
-      transition: all .3s ease-out;
-      opacity: 1;
-      visibility: visible;
-
-      span {
-        font-family: $Geometria-Bold;
-        font-size: 22px;
-        line-height: 27px;
-        color: rgba(206, 0, 0, 0.8);
-
-        @include tablet-width {
-          font-size: 18px;
-          line-height: 22px;
-        }
-
-        &:first-child {
-          display: none;
-        }
-      }
-    }
-
-    .product-price-2 {
-      span {
-        font-size: 12px;
-        color: #8a8a8a;
-
-      }
-    }
+    //.product-price {
+    //  transition: all .3s ease-out;
+    //  opacity: 1;
+    //  visibility: visible;
+    //
+    //  span {
+    //    font-family: $Geometria-Bold;
+    //    font-size: 22px;
+    //    line-height: 27px;
+    //    color: rgba(206, 0, 0, 0.8);
+    //
+    //    @include tablet-width {
+    //      font-size: 18px;
+    //      line-height: 22px;
+    //    }
+    //
+    //    &:first-child {
+    //      display: none;
+    //    }
+    //  }
+    //}
+    //
+    //.product-price-2 {
+    //  span {
+    //    font-size: 12px;
+    //    color: #8a8a8a;
+    //
+    //  }
+    //}
 
     .product-cart {
       position: absolute;
@@ -881,30 +881,34 @@
     z-index: 10;
   }
 
-  .product-content .product-price span {
-    &:first-child {
-      position: relative;
-      margin-right: 10px;
-      display: inline-block;
-      font-family: $Geometria;
-      font-size: 20px;
-      line-height: 25px;
-      color: rgba(52, 52, 56, 0.7);
+  .product-content .product-price {
+    justify-content: center;
 
-      @include tablet-width {
-        margin-right: 5px;
-        font-size: 16px;
-        line-height: 18px;
-      }
+    span {
+      &:first-child {
+        position: relative;
+        margin-right: 10px;
+        display: inline-block;
+        font-family: $Geometria;
+        font-size: 20px;
+        line-height: 25px;
+        color: rgba(52, 52, 56, 0.7);
 
-      &::before {
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        content: "";
-        top: 50%;
-        left: 0;
-        background-color: rgba(52, 53, 56, 0.7);
+        @include tablet-width {
+          margin-right: 5px;
+          font-size: 16px;
+          line-height: 18px;
+        }
+
+        &::before {
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 0;
+          background-color: rgba(52, 53, 56, 0.7);
+        }
       }
     }
   }

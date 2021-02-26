@@ -1,6 +1,11 @@
 /*-------- 13. Product details style ---------*/
 
 .product-details-content {
+  @include mobile-width {
+    padding: 0 15px;
+    width: 100%;
+  }
+
   h2 {
     margin-bottom: 15px;
     font-family: $Geometria-Bold;
@@ -8,12 +13,22 @@
     line-height: 25px;
     color: $black;
     text-transform: uppercase;
+
+    @include tablet-width {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 
   .product-order {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+
+    @include desktop-width {
+      margin-bottom: 5px;
+    }
 
     span {
       display: flex;
@@ -23,6 +38,11 @@
       font-size: 16px;
       line-height: 25px;
       color: #BE0E0E;
+
+      @include tablet-width {
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
 
     a {
@@ -38,21 +58,24 @@
     img {
       max-width: 13px;
     }
-  }
 
-  .product-price {
-    margin-bottom: 25px;
+    &--2 {
+      max-width: 300px;
 
-    span {
-      font-family: $Geometria-Bold;
-      font-size: 24px;
-      line-height: 27px;
-      color: $Dark-red;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
+
   .product-info {
+    margin-bottom: 45px;
     background-color: #F8F8F8;
-    padding: 20px 15px 10px 15px;
+    padding: 10px 15px 10px 15px;
+
+    @include desktop-width {
+      margin-bottom: 20px;
+    }
 
     table {
       border-collapse: collapse;
@@ -76,6 +99,14 @@
       color: $black;
       border-bottom: solid 1px rgba(52, 53, 56, 0.2);
 
+      @include tablet-width {
+        padding: 8px 0;
+      }
+
+      @include mobile-width {
+        font-size: 12px;
+      }
+
       &:last-child {
         text-transform: none;
       }
@@ -92,8 +123,51 @@
       }
     }
   }
+
+  .product-price--2 {
+    margin-bottom: 45px;
+
+    @include desktop-width {
+      margin-bottom: 17px;
+    }
+
+    @include tablet-width {
+      margin-bottom: 15px;
+    }
+
+    span:first-child {
+      font-family: $Geometria-Bold;
+      font-size: 20px;
+      line-height: 25px;
+      color: rgba(206, 0, 0, 0.8);
+
+      @include tablet-width {
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
 
+.product-info-1 {
+  .product-details-content {
+    padding: 0;
+  }
+}
+
+.modal-order {
+  .row {
+    flex-wrap: nowrap;
+
+    @include mobile-width {
+      flex-wrap: wrap;
+    }
+  }
+}
 
 .cart-plus-minus {
     display: inline-block;
@@ -102,6 +176,11 @@
     padding: 0;
     position: relative;
     width: 80px;
+
+    @include mobile-width {
+      height: 40px;
+    }
+
     input.cart-plus-minus-box {
         background: transparent none repeat scroll 0 0;
         border: medium none;
@@ -114,6 +193,11 @@
         text-align: center;
         width: 80px;
         border: 1px solid #e8e8e8;
+
+        @include mobile-width {
+          height: 40px;
+        }
+
         &:focus {
             border: 1px solid #343538;
         }
@@ -130,17 +214,28 @@
         text-align: center;
         transition: all 0.3s ease 0s;
         width: 24px;
+
         &.dec {
             height: 60px;
             left: 0;
             padding-top: 20px;
             top: 0;
+
+            @include mobile-width {
+              height: 40px;
+              padding-top: 10px;
+            }
         }
         &.inc {
             height: 60px;
             padding-top: 20px;
             right: 0;
             top: 0;
+
+            @include mobile-width {
+              height: 40px;
+              padding-top: 10px;
+            }
         }
     }
 }
