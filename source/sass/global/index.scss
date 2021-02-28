@@ -1,0 +1,15 @@
+.index-list {
+  li {
+    margin-bottom: 20px;
+
+    &::marker {
+      color: #00aab9;
+    }
+  }
+
+  a {
+    color: #01ac6a;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

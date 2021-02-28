@@ -21,22 +21,55 @@
 
   &__desc {
     margin-left: 60px;
+
+    @include tablet-width {
+      margin-left: 40px;
+    }
+
+    @include mobile-width {
+      margin-left: 0;
+    }
   }
 
   &__item {
     display: flex;
     border: 1px solid #E0E0E0;
     padding: 30px 60px;
+
+    @include tablet-width {
+      padding: 20px;
+    }
+
+    @include mobile-width {
+      flex-wrap: wrap;
+      gap: 20px 0;
+    }
+
+    a:nth-child(1) {
+      @include mobile-width {
+        margin: 0 auto;
+      }
+    }
   }
 
   &__btns {
     display: flex;
     align-items: center;
 
+    @include mobile-width {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      gap: 20px 0;
+    }
+
     .btn--orange {
       padding: 13px 50px;
       font-family: 'Geometria', sans-serif;
       margin-right: 43px;
+
+      @include mobile-width {
+        width: 100%;
+      }
     }
 
     .btn__compare {
@@ -63,8 +96,11 @@
   }
 
   &__img {
-    width: 135px;
-    height: 180px;
+    max-width: 180px;
+
+    @include mobile-width {
+      max-width: 250px;
+    }
   }
 
   h2 {
@@ -78,6 +114,15 @@
     color: #000000;
     transition: .2s;
 
+    @include tablet-width {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @include mobile-width {
+      font-size: 16px;
+    }
+
     &:hover {
       color: #E25F27;
       transition: .2s;
@@ -85,43 +130,55 @@
   }
 
   &__meta {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: auto 23% auto;
     margin-bottom: 26px;
 
-    .product-price {
-      margin-right: 60px;
+    @include tablet-width {
+      grid-template-columns: auto 30% auto;
+    }
+
+    @include mobile-width {
+      grid-template-columns: 1fr;
+    }
+
+    .result-search__rating {
+      max-width: 150px;
     }
 
     .product-order {
-      margin-right: 60px;
+      @include mobile-width {
+        margin: 5px 0;
+      }
+
+      span {
+        display: flex;
+        gap: 0 5px;
+        align-items: center;
+        font-family: Geometria, arial, sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        color: #be0e0e;
+      }
+
+      img {
+        max-width: 13px;
+      }
     }
   }
-}
-
-.product-order {
-  span {
-    display: flex;
-    gap: 0 5px;
-    align-items: center;
-    font-family: Geometria, arial, sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-    color: #be0e0e;
-  }
-
-  img {
-    max-width: 13px;
-  }
-
-
 }
 
 .product-price {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap:10px;
+  gap: 10px;
+
+  @include mobile-width {
+    gap: 5px;
+  }
+
   span:first-child {
     position: relative;
     margin-right: 10px;
@@ -130,6 +187,10 @@
     font-size: 20px;
     line-height: 25px;
     color: rgba(52, 52, 56, .7);
+
+    @include mobile-width {
+      font-size: 18px;
+    }
 
     &:before {
       width: 100%;
@@ -147,6 +208,10 @@
     font-size: 22px;
     line-height: 27px;
     color: rgba(206, 0, 0, .8);
+
+    @include mobile-width {
+      font-size: 20px;
+    }
   }
 }
 
