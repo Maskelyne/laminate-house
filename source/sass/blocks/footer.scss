@@ -23,7 +23,14 @@
       max-width: 100%;
     }
     @include mobile-width {
-      display: none;
+      a,
+      p {
+        display: none;
+      }
+
+      .footer-time-work p {
+        display: block;
+      }
     }
   }
 

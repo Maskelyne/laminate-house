@@ -1,20 +1,39 @@
 /*-------- 21. Compare style ---------*/
 
 .compare-table {
+  &::-webkit-scrollbar {
+    width: 24px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #f8f8f8;
+  }
+
+  /* ползунок скроллбара */
+  &::-webkit-scrollbar-thumb {
+    background-color: #F98C2F;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #DC5126;
+  }
+
     & .table {
         & tbody {
             & tr {
                 & th {
                     &.first-column {
                         min-width: 292px;
-                        font-size: 15px;
+                        font-family: $Geometria;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-weight: $Normal;
                         color: #262626;
                         margin: 0;
                         background-color: #e9e9e9;
-                        font-weight: 400;
-                        padding: 10px 30px;
+                        padding: 15px 10px 15px 20px;
                         border: none;
-                        background-color: #e9e9e9;
+                        text-transform: uppercase;
+                        border-bottom: solid 2px #ffffff;
                         @media #{$md-layout} {
                             min-width: 200px;
                         }
@@ -25,29 +44,41 @@
                     }
                 }
                 &:first-child th {
+                    font-family: $Geometria-Bold;
                     padding-top: 53px;
                 }
                 &:last-child th {
-                    padding-bottom: 55px;
+                    padding-bottom: 115px;
                 }
                 & td {
                     text-align: center;
                     padding: 17px 15px;
                     vertical-align: middle;
                     border-color: #e7e7e7;
+                    .btn {
+                      padding: 15px 37px;
+                      &:hover {
+                        color: #ffffff;
+                      }
+                    }
                     &.product-image-title {
                         min-width: 293px;
                         vertical-align: bottom;
                         padding: 27px 10px 35px;
+                        position: relative;
                         @media #{$xs-layout} {
                             min-width: 220px;
                         }
                         .compare-remove {
+                          width: 40px;
+                          height: 40px;
+                          position: absolute;
+                          top: 10px;
+                          right: 10px;
+                          opacity: 0.7;
+
                             a {
-                                font-size: 13px;
-                                i {
-                                    padding-right: 5px;
-                                }
+                                font-size: 30px;
                                 &:hover {
                                     color: $theme-color;
                                 }
@@ -56,7 +87,8 @@
                         & .image {
                             clear: both;
                             width: 100%;
-                            margin: 14px 0 7px;
+                            max-width: 70px;
+                            margin: 0 auto 15px auto;
                             display: block;
                             img {
                                 width: auto;
@@ -75,13 +107,12 @@
                             > a {
                                 float: left;
                                 clear: both;
-                                font-size: 16px;
-                                font-weight: 400;
-                                text-transform: capitalize;
-                                margin-top: 5px;
+                                font-family: $Geometria-Bold;
+                                font-size: 14px;
+                                line-height: 18px;
+                                text-transform: uppercase;
                                 display: block;
                                 width: 100%;
-                                font-family: $playfairdisplay;
                                 &:hover {
                                     color: $theme-color;
                                 }
@@ -100,26 +131,75 @@
                             }
                         }
                     }
-                    &.pro-desc {
-                        & p {
-                            margin: 0;
-                            font-size: 13px;
-                            line-height: 1.88;
-                        }
-                    }
                     &.pro-price {
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: #343538;
+                        font-family: $Geometria;
+                        font-size: 16px;
+                        color: #000000;
                     }
-                    &.pro-sku , &.pro-stock , &.pro-weight {
-                        font-size: 13px;
-                        font-weight: 400;
+                    &.pro-sku , &.pro-stock , &.pro-weight, &.pro-desc {
+                      font-family: $Geometria;
+                      font-size: 16px;
+                      color: #000000;
                     }
                     &.pro-dimensions {
-                        font-size: 13px;
-                        font-weight: 400;
+                      font-family: $Geometria;
+                      font-size: 16px;
+                      color: #000000;
                     }
+                    &.pre-order {
+                      span {
+                        display: flex;
+                        gap: 0 5px;
+                        align-items: center;
+                        font-family: Geometria,arial,sans-serif;
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: #be0e0e;
+                        justify-content: center;
+                        position: relative;
+                        margin: 0 auto;
+                        max-width: 120px;
+
+                        &::before {
+                          width: 13px;
+                          height: 20px;
+                          position: absolute;
+                          content: "";
+                          top: 4px;
+                          left: 0;
+                          background-image: url("../img/svg/icon-pen.svg");
+                          background-repeat: no-repeat;
+                        }
+                      }
+                    }
+                  &.in-stock {
+                    position: relative;
+
+                    span {
+                      display: flex;
+                      gap: 0 5px;
+                      align-items: center;
+                      font-family: Geometria,arial,sans-serif;
+                      font-size: 16px;
+                      line-height: 25px;
+                      justify-content: center;
+                      position: relative;
+                      margin: 0 auto;
+                      max-width: 120px;
+                      color: #06714a;
+
+                      &::before {
+                        width: 13px;
+                        height: 15px;
+                        position: absolute;
+                        content: "";
+                        top: 5px;
+                        left: 0;
+                        background-image: url("../img/svg/icon-check.svg");
+                        background-repeat: no-repeat;
+                      }
+                    }
+                  }
                 }
             }
         }
