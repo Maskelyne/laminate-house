@@ -35,7 +35,7 @@ const htmlDev = () => {
     .pipe(browserSync.stream());
 };
 
-const bootstrapCss = () => {
+const vendorCss = () => {
   return src('source/css/*.css')
     .pipe(dest('dev/assets/css'))
 }
@@ -62,7 +62,7 @@ const styles = () => {
     .pipe(browserSync.stream());
 };
 
-const bootstrapJs = () => {
+const vendorJs = () => {
   return src(['source/js/bootstrap.min.js',
   'source/js/popper.min.js',
   'source/js/plugins.js',
@@ -108,15 +108,15 @@ const watchFiles = () => {
 
 exports.fileinclude = htmlDev;
 exports.styles = styles;
-exports.bootstrapCss = bootstrapCss;
-exports.bootstrapJs = bootstrapJs;
+exports.vendorCss = vendorCss;
+exports.vendorJs = vendorJs;
 exports.scripts = scripts;
 exports.watchFiles = watchFiles;
 exports.fontsDev = fontsDev;
 exports.clean = clean;
 exports.imgToBuild = imgToBuild;
 
-exports.development = series(clean, parallel(fontsDev, htmlDev, bootstrapCss, styles, scripts, bootstrapJs, imgToBuild), watchFiles);
+exports.development = series(clean, parallel(fontsDev, htmlDev, vendorCss, styles, scripts, vendorJs, imgToBuild), watchFiles);
 
 
 // ---------- BUILD ----------
@@ -131,13 +131,18 @@ const fontsBuild = () => {
 }
 
 const htmlBuild = () => {
-  return src(['source/html/index.html'])
+  return src(['source/html/*.html'])
     .pipe(fileinclude({
       prefix: '@',
       basepath: '@file'
     }))
     .pipe(dest('build'))
 };
+
+const vendorCssBuild = () => {
+  return src('source/css/*.css')
+    .pipe(dest('build/assets/css'))
+}
 
 const stylesBuild = () => {
   return src('source/sass/style.scss')
@@ -160,6 +165,15 @@ const stylesBuild = () => {
     .pipe(dest('build/assets/css'))
 };
 
+const vendorJsBuild = () => {
+  return src(['source/js/bootstrap.min.js',
+    'source/js/popper.min.js',
+    'source/js/plugins.js',
+    'source/js/jquery-1.12.4.min.js',
+    'source/js/vendor.js'])
+    .pipe(dest('build/assets/js'))
+}
+
 const scriptsBuild = () => {
   return src('source/js/main.js')
     .pipe(webpackStream(webpackConfig), webpack)
@@ -181,10 +195,12 @@ const imageMinBuild = () => {
     .pipe(dest('build/assets/img'))
 };
 
+exports.vendorCssBuild = vendorCssBuild;
 exports.stylesBuild = stylesBuild;
 exports.fontsBuild = fontsBuild;
+exports.vendorJsBuild = vendorJsBuild;
 exports.scriptsBuild = scriptsBuild;
 exports.cleanBuild = cleanBuild;
 exports.imageMinBuild = imageMinBuild;
 
-exports.build = series(cleanBuild, fontsBuild, htmlBuild, stylesBuild, scriptsBuild, imageMinBuild);
+exports.build = series(cleanBuild, fontsBuild, htmlBuild, vendorCssBuild, stylesBuild, vendorJsBuild, scriptsBuild, imageMinBuild);
