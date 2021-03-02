@@ -30,6 +30,25 @@
     padding: 0 15px;
   }
 
+  .cart-empty-content {
+    img {
+      max-width: 195px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      margin: 110px 0 60px 0;
+      font-family: $Geometria-Bold;
+      font-size: 20px;
+      line-height: 25px;
+      text-transform: uppercase;
+    }
+
+    a {
+      margin: 60px 0 110px 0;
+    }
+  }
+
   .cart-table-content {
     margin-top: 20px;
 
