@@ -8,31 +8,31 @@ export function vendors () {
     }
   });
 
-  $('.plus').click(function () {
-    var countner = $('.t-count').text();
-    $('.t-count').text(countner/2);
+  // $('.plus').click(function () {
+  //   var countner = $('.t-count').text();
+  //   $('.t-count').text(countner/2);
+  //
+  //   var total = $('.total-price').text();
+  //   $('.total-price').text(total/2);
+  //
+  //   var $input = $(this).parent().find('input');
+  //   var count = parseInt($input.val()) - 1;
+  //   count = count < 1 ? 1 : count;
+  //   $input.val(count);
+  //   $input.change();
+  //   return false;
+  // });
 
-    var total = $('.total-price').text();
-    $('.total-price').text(total/2);
-
-    var $input = $(this).parent().find('input');
-    var count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
-    $input.val(count);
-    $input.change();
-    return false;
-  });
-
-  $('.minus').click(function () {
-    var countner = $('.t-count').text();
-    $('.t-count').text(countner*2);
-    var total = $('.total-price').text();
-    $('.total-price').text(total*2);
-
-    var $input = $(this).parent().find('input');
-    $input.val(parseInt($input.val()) + 1);
-    $input.change();
-    return false;
-  });
+  // $('.minus').click(function () {
+  //   var countner = $('.t-count').text();
+  //   $('.t-count').text(countner*2);
+  //   var total = $('.total-price').text();
+  //   $('.total-price').text(total*2);
+  //
+  //   var $input = $(this).parent().find('input');
+  //   $input.val(parseInt($input.val()) + 1);
+  //   $input.change();
+  //   return false;
+  // });
 
 }
