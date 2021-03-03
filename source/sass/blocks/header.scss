@@ -1,13 +1,29 @@
 /*----- 2. Header style  -----*/
 
+.header-main {
+  max-width: 1570px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include desktop-width-middle {
+    padding: 0 15px;
+  }
+}
+
 .header-area {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
 
-  @include tablet-width {
+  @include desktop-width {
     display: none;
   }
 
   .logo {
+    @include desktop-width-middle {
+      max-width: 140px;
+    }
     img {
       max-width: 200px;
     }
@@ -60,6 +76,10 @@
                     font-size: 14px;
                     line-height: 18px;
                     transition: background .3s ease-in-out,color .3s ease-in-out,border-color .3s ease-in-out;
+                    @include desktop-width-middle {
+                      padding: 5px 10px;
+                    }
+
                     @media #{$lg-layout} {
                         padding: 5px 3px;
                     }
@@ -2339,17 +2359,19 @@
                     > li {
                         padding-bottom: 20px;
                         > a {
-                            font-size: 12px;
-                            font-weight: 700;
-                            color: #343538;
+                          font-family: $Geometria-Bold;
+                          font-size: 16px;
+                          line-height: 21px;
+                          color: #343538;
                         }
                         ul {
                             li {
                                 padding-bottom: 15px;
                                 a {
-                                    font-size: 13px;
-                                    font-weight: 500;
-                                    color: #343538;
+                                  font-family: $Geometria-Bold;
+                                  font-size: 16px;
+                                  line-height: 21px;
+                                  color: #343538;
                                     &:hover span {
                                         color: $theme-color;
                                     }
@@ -2384,8 +2406,13 @@
                                     line-height: 30px;
                                     width: 30px;
                                 }
+                              &:hover {
+                                &::before {
+                                  color: $theme-color;
+                                }
+                              }
                             }
-                            &:hover a.next::after{
+                            &:hover a.next::after {
                                 color: $theme-color;
                             }
                         }
@@ -2490,7 +2517,7 @@
       max-width: 150px;
     }
 
-    @include tablet-width {
+    @include desktop-width {
       display: block;
       box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
       &.block-for-sidemenu {
@@ -2512,7 +2539,89 @@
     }
 }
 
+.header-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.phone-box {
+  position: relative;
+  padding-left: 30px;
+
+  @include mobile-width {
+    display: none;
+  }
+
+  &::before {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: 0;
+    background-image: url("../img/svg/icon-phone.svg");
+    background-repeat: no-repeat;
+  }
+
+  a {
+    font-family: $Geometria;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  button {
+    border: none;
+    padding: 0;
+    margin-left: 5px;
+    background-color: transparent;
+
+    img {
+      max-width: 15px;
+      transform: rotate(180deg);
+    }
+  }
+
+  ul {
+    @include reset-list;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-gap: 0 5px;
+    justify-content: center;
+
+    img {
+      transition: all 0.3s linear;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s linear;
+      }
+    }
+  }
+
+  .btn-active {
+    img {
+      transform: rotate(0deg);
+    }
+  }
+
+  .phone-hide {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    display: none;
+  }
+
+  .phone-active {
+    display: flex;
+    width: 197px;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 0 30px 15px 30px;
+    z-index: 5;
+  }
+}
 
 
 

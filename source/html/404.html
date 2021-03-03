@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+
+@include('general/head.html')
+
+<body>
+@include('components/header.html')
+  <main>
+    <section class="page-unavailable">
+      <div class="page-unavailable__wrapper">
+        <div class="page-unavailable__text">
+          <h1>
+            <img src="assets/img/png/attention.png" width="40" height="30" alt="Ошибка 404">
+            Ошибка <span>404</span></h1>
+          <p>Такой страницы не существует</p>
+          <a href="#" class="btn btn--incomplete">На главную</a>
+        </div>
+      </div>
+    </section>
+  </main>
+@include('components/footer.html')
+@include('general/scripts.html')
+
+</body>
+
+</html>
