@@ -163,30 +163,7 @@
       $this.html(event.strftime('<span class="cdown day">%-D <p>Days</p></span> <span class="cdown hour">%-H <p>Hrs</p></span> <span class="cdown minutes">%M <p>Mins</p></span class="cdown second"> <span>%S <p>Secs</p></span>'));
     });
   });
-
-
-  /*----------------------------
-    Cart Plus Minus Button
-  ------------------------------ */
-  // var CartPlusMinus = $('.cart-plus-minus');
-  // CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
-  // CartPlusMinus.append('<div class="inc qtybutton">+</div>');
-  // $(".qtybutton").on("click", function() {
-  //   var $button = $(this);
-  //   var oldValue = $button.parent().find("input").val();
-  //   if ($button.text() === "+") {
-  //     var newVal = parseFloat(oldValue) + 1;
-  //   } else {
-  //     // Don't allow decrementing below zero
-  //     if (oldValue > 0) {
-  //       var newVal = parseFloat(oldValue) - 1;
-  //     } else {
-  //       newVal = 1;
-  //     }
-  //   }
-  //   $button.parent().find("input").val(newVal);
-  // });
-
+  
 
   /*-------------------------
     tooltip

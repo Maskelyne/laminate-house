@@ -24,12 +24,6 @@
       &:after {
         display: none;
       }
-
-      a {
-        &:hover {
-          color: $white;
-        }
-      }
     }
 
     a {
@@ -37,6 +31,12 @@
 
       &:hover {
         color: $Orange;
+      }
+
+      &:last-child {
+        &:not([href]) {
+          color: #ffffff;
+        }
       }
     }
   }

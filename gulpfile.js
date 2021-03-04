@@ -101,6 +101,7 @@ const watchFiles = () => {
   watch('source/html/**/*.html', htmlDev);
   watch('source/sass/**/*.scss', styles);
   watch('source/js/**/*.js', scripts);
+  watch('source/js/vendor.js', vendorJs);
   watch('source/img/**/*.jpg', imgToBuild);
   watch('source/img/**/*.svg', imgToBuild);
   watch('source/img/**/*.png', imgToBuild);

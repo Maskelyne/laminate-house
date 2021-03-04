@@ -90,7 +90,9 @@
       input, textarea {
         border: 1px solid #E0E0E0;
         height: 50px;
-        font-size: 12px;
+        font-family: $Geometria;
+        font-size: 16px;
+        line-height: 25px;
         padding: 2px 15px;
         color: #8a8a8a;
         margin-bottom: 20px;
@@ -100,8 +102,6 @@
         &::placeholder {
           color: #343538;
           opacity: 0.5;
-          font-size: 16px;
-          line-height: 20px;
         }
 
         &:focus {
@@ -110,9 +110,7 @@
       }
 
       textarea {
-        &::placeholder {
-          padding-top: 10px;
-        }
+        padding-top: 10px;
       }
 
       & button.submit {
@@ -131,6 +129,19 @@
 
       textarea {
         height: 130px;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill,
+      textarea:-webkit-autofill,
+      select:-webkit-autofill, {
+        border: 1px solid #E0E0E0;
+        font-family: $Geometria;
+        font-size: 16px;
+        line-height: 25px;
+        -webkit-text-fill-color: #8a8a8a;
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        transition: background-color 5000s ease-in-out 0s;
       }
     }
   }
@@ -282,8 +293,6 @@
 
 .contacts__requisites {
   padding-top: 30px;
-  margin-top: 30px;
-  border-top: 1px solid #E25F27;
   max-width: 640px;
   @media(max-width: 991px) {
   max-width: unset;

@@ -1,37 +1,30 @@
 export function vendors () {
 
-  $("#tel").keyup(function () {
-    if ($(this).val()) {
-      $(this).addClass("not-empty");
-    } else {
-      $(this).removeClass("not-empty");
-    }
-  });
-
-  $('.minus').click(function () {
-    var countner = $('.t-count').text();
-    $('.t-count').text(countner/2);
-
-    var total = $('.total-price').text();
-    $('.total-price').text(total/2);
-
+  $('.dec').click(function() {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
+    if (count > 0) {
+      var countner = $('.t-count').text();
+      $('.t-count').text(countner / 2);
+      var total = $('.total-price').text();
+      $('.total-price').text(total / 2);
+    } else {
+      count = 1;
+    }
     $input.val(count);
     $input.change();
     return false;
   });
 
-  $('.plus').click(function () {
-    var countner = $('.t-count').text();
-    $('.t-count').text(countner*2);
-    var total = $('.total-price').text();
-    $('.total-price').text(total*2);
-
+  $('.inc').click(function() {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
+
+    var countner = $('.t-count').text();
+    $('.t-count').text(countner++);
+    var total = $('.total-price').text();
+    $('.total-price').text(total * 2);
     return false;
   });
 

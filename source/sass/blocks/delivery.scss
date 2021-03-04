@@ -15,12 +15,21 @@
   &--bread{
     .breadcrumbs a{
       color: #8A8A8A;
+
+      &:hover {
+        color: $Orange;
+      }
     }
     .breadcrumbs li::after{
       color: #8A8A8A;
     }
     .breadcrumbs li:first-child a{
       margin-left: 0;
+    }
+    .breadcrumbs li:last-child a{
+      &:not([href]) {
+        color: #8a8a8a;
+      }
     }
   }
   &--nom{
