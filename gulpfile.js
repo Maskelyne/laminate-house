@@ -63,11 +63,10 @@ const styles = () => {
 };
 
 const vendorJs = () => {
-  return src(['source/js/bootstrap.min.js',
+  return src([
+  'source/js/bootstrap.min.js',
   'source/js/popper.min.js',
-  'source/js/plugins.js',
-  'source/js/jquery-1.12.4.min.js',
-  'source/js/vendor.js'])
+  'source/js/wow.min.js'])
     .pipe(dest('dev/assets/js'))
 }
 
@@ -101,7 +100,6 @@ const watchFiles = () => {
   watch('source/html/**/*.html', htmlDev);
   watch('source/sass/**/*.scss', styles);
   watch('source/js/**/*.js', scripts);
-  watch('source/js/vendor.js', vendorJs);
   watch('source/img/**/*.jpg', imgToBuild);
   watch('source/img/**/*.svg', imgToBuild);
   watch('source/img/**/*.png', imgToBuild);
