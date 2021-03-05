@@ -6,7 +6,7 @@
 <body>
 <div class="wrapper blog wrapper-2 wrapper-3">
   @include('components/header.html')
-  <div class="delivery-title delivery-title--left section-padding-1" style="background-image: url(../assets/img/jpg/catalog-banner.jpg); background-repeat: no-repeat;background-size: cover;">
+  <div class="delivery-title delivery-title--left section-padding-1" style="background-image: url(assets/img/jpg/catalog-banner.jpg); background-repeat: no-repeat;background-size: cover;">
     <div class="container-fluid">
       <div class="col-xl-2 col-lg-2 col-md-6 col-4">
         <h2>Каталог</h2>
@@ -442,11 +442,8 @@
           </div>
           <div class="product-details-content quickview-content">
             <h2>4766 ДУБ ТЕМНЫЙ ПЕТЕРСОН ПР-ВО KRONOTEX ГЕРМАНИЯ</h2>
-            <div class="product-order">
-                  <span>
-                    <img src="assets/img/svg/icon-pen.svg" width="13" height="18" alt="Под заказ">
-                    Под заказ
-                  </span>
+            <div class="product-order in-stock">
+              <span>Под заказ</span>
               <a href="#"><i class="negan-icon-switch"></i> <span>в сравнение</span></a>
             </div>
             <div class="product-price product-price--2">
@@ -480,12 +477,7 @@
                 </tr>
               </table>
             </div>
-            <div class="product-order product-order--2">
-              <div class="cart-plus-minus">
-                <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
-              </div>
-              <a href="#" class="link-order btn--orange">В корзину</a>
-            </div>
+            <a href="#" class="btn--orange">В корзину</a>
           </div>
         </div>
       </div>

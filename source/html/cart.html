@@ -1,0 +1,220 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@include('general/head.html')
+<body>
+<div class="wrapper wrapper-2 wrapper-3">
+  @include('components/header.html')
+  <div class="delivery-title " style="background-image: url(assets/img/jpg/cart-banner.jpg); background-repeat: no-repeat;background-size: cover;background-position: right;">
+    <h2>Корзина</h2>
+    <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cart-main-area pt-60 pb-60">
+    <div class="row">
+      <div class="col-12">
+        <form action="#">
+          <div class="table-content table-responsive cart-table-content">
+            <table>
+              <thead>
+                <tr>
+                  <th class="product-name">Товар</th>
+                  <th class="head-price">Цена</th>
+                  <th class="head-quality">Количество</th>
+                  <th class="head-total">Итог</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="product-cart-name">
+                  <a href="#">
+                    <img src="assets/img/jpg/product-3.jpg" width="70" height="100" alt="">
+                    <h4>4766 ДУБ ТЕМНЫЙ ПЕТЕРСОН ПР-ВО KRONOTEX ГЕРМАНИЯ</h4>
+                  </a>
+                </td>
+                <td class="product-price-cart">
+                  <span class="amount">13, 50 (м<sup>2</sup>)</span>
+                </td>
+                <td class="product-quantity">
+                  <div class="cart-plus-minus">
+                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                  </div>
+                  <span>м<sup>2</sup></span>
+                </td>
+                <td class="product-total">
+                  <span>13, 50 р.</span>
+                  <div class="compare-remove">
+                    <a href="#"><i class="lightcase-icon-close"></i></a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-cart-name">
+                  <a href="#">
+                    <img src="assets/img/jpg/product-3.jpg" width="70" height="100" alt="">
+                    <h4>4766 ДУБ ТЕМНЫЙ ПЕТЕРСОН ПР-ВО KRONOTEX ГЕРМАНИЯ</h4>
+                  </a>
+                </td>
+                <td class="product-price-cart">
+                  <span class="amount">13, 50 (м<sup>2</sup>)</span>
+                </td>
+                <td class="product-quantity">
+                  <div class="cart-plus-minus">
+                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                  </div>
+                  <span>м<sup>2</sup></span>
+                </td>
+                <td class="product-total">
+                  <span>13, 50 р.</span>
+                  <div class="compare-remove">
+                    <a href="#"><i class="lightcase-icon-close"></i></a>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="cart-shiping-update-wrapper">
+                <div class="cart-shiping-update">
+                  <p>Сумма заказа: <strong>27, 00 р.</strong></p>
+                </div>
+                <div class="cart-clear">
+                  <a href="#" class="btn btn--orange">Оформить заказ</a>
+                  <a href="#" class="btn btn--incomplete">Продолжить покупки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="calculate-order">
+    <h2>Оформление заказа</h2>
+    <div class="calculate-order__wrapper">
+      <form action="#" class="calculate-order__form">
+        <div class="calculate-order__form-wrapper-1">
+          <div class="calculate-order__1">
+            <span>1.</span>
+            <div class="calculate-order__inputs">
+              <p>Контактная информация</p>
+              <div class="calculate-order__name">
+                <input id="name" type="text" name="name" placeholder="Ваше имя">
+                <label for="name" class="visually-hidden">Ваше имя</label>
+              </div>
+              <div class="calculate-order__phone">
+                <input id="phone" type="text" name="phone" placeholder="Номер телефона*">
+                <label for="phone" class="visually-hidden">Номер телефона*</label>
+              </div>
+              <div class="calculate-order__email">
+                <input id="email" type="text" name="email" placeholder="E-mail">
+                <label for="email" class="visually-hidden">E-mail</label>
+              </div>
+            </div>
+          </div>
+          <div class="calculate-order__1">
+            <span>2.</span>
+            <div class="calculate-order__inputs">
+              <p>Способ доставки</p>
+              <div class="calculate-order__pickup">
+                <input id="pickup" class="visually-hidden" type="radio" name="delivery" value="1" checked>
+                <label for="pickup">Самовывоз</label>
+                <div class="calculate-order__pickup-info">
+                  <a href="#">
+                    <img src="assets/img/svg/con-marker.svg" width="30" height="30" alt="Адрес">
+                    Минск, ул.Будславская, 19
+                  </a>
+                  <p>Если вы осуществляете самовывоз, оплату необходимо будет совершить в кассе нашего магазина</p>
+                </div>
+              </div>
+              <div class="calculate-order__delivery">
+                <input id="delivery" class="visually-hidden" type="radio" name="delivery" value="2">
+                <label for="delivery">Доставка</label>
+                <div class="calculate-order__delivery-info">
+                  <p>По г. Минску:</p>
+                  <p>- доставка до подъезда, в пределах МКАД+10км.- <strong>15 руб.</strong></p>
+                  <p>- при покупке более 30 м.кв. ламината - <strong>бесплатно!</strong></p>
+                  <div class="calculate-order__input-delivery">
+                    <p>По Минской области</p>
+                    <p>- из расчета 50 коп/км (в одну сторону). Не менее 15 руб.</p>
+                    <input id="city" type="text" name="city" placeholder="Город">
+                    <label for="city" class="visually-hidden">Город</label>
+                    <div class="calculate-order__input-delivery-1">
+                      <div>
+                        <input id="street" type="text" name="street" placeholder="Улица">
+                        <label for="street" class="visually-hidden">Улица</label>
+                      </div>
+                      <div>
+                        <input id="house" type="text" name="house" placeholder="Дом">
+                        <label for="house" class="visually-hidden">Дом</label>
+                      </div>
+                      <div>
+                        <input id="entrance" type="text" name="entrance" placeholder="Подъезд">
+                        <label for="entrance" class="visually-hidden">Подъезд</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculate-order__form-wrapper-2">
+          <div class="calculate-order__1">
+            <span>3.</span>
+            <div class="calculate-order__inputs">
+              <p>Способы оплаты</p>
+              <div class="calculate-order__cash">
+                <input id="cash" class="visually-hidden" type="radio" name="pay" value="cash" checked>
+                <label for="cash">Наличные</label>
+              </div>
+              <div class="calculate-order__card">
+                <input id="card" class="visually-hidden" type="radio" name="pay" value="card">
+                <label for="card">Банковская карта</label>
+                <div class="calculate-order__card-info">
+                  <p>Возможна рассрочка по карте <strong>“Халва” на 3 месяца</strong>, а также оплата <strong> картой “Покупок”</strong></p>
+                  <div class="calculate-order__card-img">
+                    <img src="assets/img/jpg/image-bgbp.jpg" width="80" height="50" alt="Белгазпромбанк">
+                    <img src="assets/img/jpg/image-mtb.jpg" width="80" height="50" alt="МТБанк">
+                  </div>
+                </div>
+              </div>
+              <div class="calculate-order__cashless">
+                <input id="cashless" class="visually-hidden" type="radio" name="pay" value="cashless">
+                <label for="cashless">Безналичный расчёт</label>
+                <div class="calculate-order__cashless-info">
+                  <p>- для физ.лиц ( оплата через банк ).</p>
+                  <p>- для юридических лиц ( счет с ндс ).</p>
+                </div>
+              </div>
+              <div class="calculate-order__erip">
+                <input id="erip" class="visually-hidden" type="radio" name="pay" value="erip">
+                <label for="erip">Система «Расчет» (ЕРИП)</label>
+                <div class="calculate-order__erip-info">
+                  <img src="assets/img/png/image-erip.png" width="60" height="40" alt="Оплата через ЕРИП">
+                  <p>- Оплатить товары интернет-магазина Domlaminata.by Вы можете через систему ”Расчет“ (ЕРИП), в любом удобном для Вас пункте банковского обслуживания – интернет-банке, с помощью мобильного банкинга, инфокиоске, кассе банков, банкомате и т.д.</p>
+                  <p>Совершить оплату можно с использованием наличных денежных средств, электронных денег и банковских платежных карточек в пунктах банковского обслуживания  банков, которые оказывают услуги по приему платежей, а также посредством инструментов дистанционного банковского обслуживания.</p>
+                  <a href="#">Подробнее об оплате через ЕРИП</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  @include('components/footer.html')
+</div>
+@include('general/scripts.html')
+</body>
+
+</html>

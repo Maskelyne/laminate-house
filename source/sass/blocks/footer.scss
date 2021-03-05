@@ -23,7 +23,14 @@
       max-width: 100%;
     }
     @include mobile-width {
-      display: none;
+      a,
+      p {
+        display: none;
+      }
+
+      .footer-time-work p {
+        display: block;
+      }
     }
   }
 
@@ -103,16 +110,34 @@
   .footer-messengers__list {
     @include reset-list;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 30px));
-    grid-gap: 0 10px;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 40px));
+    grid-gap: 0 5px;
     padding-left: 35px;
+
+    img {
+      transition: all 0.3s linear;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s linear;
+      }
+    }
   }
 
   .footer-social__list {
     @include reset-list;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 30px));
-    grid-gap: 0 10px;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 40px));
+    grid-gap: 0 5px;
+
+    img {
+      transition: all 0.3s linear;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s linear;
+      }
+    }
   }
 
   &.footer-about {

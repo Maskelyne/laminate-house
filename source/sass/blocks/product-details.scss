@@ -1,5 +1,9 @@
 /*-------- 13. Product details style ---------*/
 
+.product-info-1 {
+  padding: 0;
+}
+
 .product-details-content {
   @include mobile-width {
     padding: 0 15px;
@@ -55,21 +59,104 @@
       }
     }
 
-    img {
-      max-width: 13px;
+    &.pre-order {
+      span:first-child {
+        font-family: Geometria,arial,sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        color: #be0e0e;
+        position: relative;
+        max-width: 120px;
+        padding-left: 20px;
+
+        &::before {
+          width: 13px;
+          height: 20px;
+          position: absolute;
+          content: "";
+          top: 4px;
+          left: 0;
+          background-image: url("../img/svg/icon-pen.svg");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    &.in-stock {
+      position: relative;
+
+      span:first-child {
+        font-family: Geometria,arial,sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        position: relative;
+        max-width: 120px;
+        padding-left: 20px;
+        color: #06714a;
+
+        &::before {
+          width: 13px;
+          height: 15px;
+          position: absolute;
+          content: "";
+          top: 5px;
+          left: 0;
+          background-image: url("../img/svg/icon-check.svg");
+          background-repeat: no-repeat;
+        }
+      }
     }
 
     &--2 {
-      max-width: 300px;
-
       &:last-child {
         margin-bottom: 0;
+
+        @include desktop-width {
+          flex-direction: column;
+        }
+      }
+
+      .price-counter {
+        span:first-child {
+          color: rgba(52, 53, 56, 0.7);
+          font-size: 14px;
+          line-height: 18px;
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        span:last-child {
+          color: #343538;
+          font-size: 22px;
+          line-height: 28px;
+
+          @include mobile-width {
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .product-price-order {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-right: 10px;
+        max-width: 350px;
+
+        @include desktop-width {
+          max-width: 70%;
+          margin-right: 0;
+        }
+
+        @include tablet-width {
+          max-width: 100%;
+        }
       }
     }
   }
 
   .product-info {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     background-color: #F8F8F8;
     padding: 10px 15px 10px 15px;
 
@@ -113,14 +200,21 @@
     }
   }
 
-  .product-order {
-    .link-order {
-      min-width: 200px;
-      justify-content: center;
+  .btn--orange {
+    padding: 13px 0;
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    text-align: center;
+    justify-content: center;
 
-      &:hover {
-        color: $white;
-      }
+    @include desktop-width {
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    &:hover {
+      color: $white;
     }
   }
 
@@ -156,6 +250,10 @@
 .product-info-1 {
   .product-details-content {
     padding: 0;
+
+    @include tablet-width {
+      padding: 0 15px;
+    }
   }
 }
 
@@ -381,6 +479,7 @@
         margin: 44px 0 58px;
         @media #{$xs-layout} {
             margin: 30px 0 30px;
+            padding: 0 15px;
         }
         .description-review-topbar {
             padding: 0 0 25px;
@@ -452,9 +551,13 @@
                 padding-bottom: 35px;
                 .review-img {
                     flex: 0 0 70px;
-                    img {
-                        width: 100%;
-                    }
+
+                  @include mobile-width {
+                    flex: 0 0 50px;
+                  }
+                  img {
+                      width: 100%;
+                  }
                 }
                 .review-content {
                     margin-left: 30px;
@@ -463,14 +566,22 @@
                     }
                     p {
                         font-family: $Geometria;
-                        line-height: 20px;
-                        font-size: 20px;
+                        line-height: 18px;
+                        font-size: 16px;
                         margin: 0 0 42px;
                         color: rgba(52, 53, 56, 0.7);
+
+                      @include mobile-width {
+                        margin: 0 0 25px;
+                      }
                     }
                     .review-top-wrap {
                         display: flex;
                         justify-content: space-between;
+
+                      @include tablet-width {
+                        flex-direction: column;
+                      }
                         .review-name {
                             h4 {
                                 font-family: $Geometria;
@@ -487,6 +598,10 @@
                                     width: 60px;
                                     height: 1px;
                                     content: "";
+
+                                  @include mobile-width {
+                                    top: -10px;
+                                  }
                                 }
                             }
                         }
@@ -544,46 +659,38 @@
                 }
                 form {
                    .rating-form-style {
-                        label {
-                            color: #343538;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            letter-spacing: 1px;
-                            margin: 0 0 8px;
-                            span {
-                                color: red;
-                            }
-                        }
-                        input {
-                            border: 1px solid #e8e8e8;
-                            background: transparent;
-                            height: 45px;
-                            &:focus {
-                                border: 1px solid #343538;
-                            }
-                        }
-                        textarea {
-                            border: 1px solid #e8e8e8;
-                            background: transparent;
-                            height: 200px;
-                            &:focus {
-                                border: 1px solid #343538;
-                            }
-                        }
-                    }
-                    .form-submit {
-                        input {
-                            padding: 10px 40px;
-                            text-transform: uppercase;
-                            width: auto;
-                            color: #fff;
-                            background-color: #dcb86c;
-                            border: none;
-                            &:hover {
-                                background-color: #343538;
-                            }
-                        }
-                    }
+                     label {
+                       color: #343538;
+                       font-size: 12px;
+                       text-transform: uppercase;
+                       letter-spacing: 1px;
+                       margin: 0 0 8px;
+
+                       span {
+                         color: red;
+                       }
+                     }
+
+                     input {
+                       border: 1px solid #e0e0e0;
+                       background-color: #fbfbfb;
+                       height: 45px;
+
+                       &:focus {
+                         border: 1px solid #343538;
+                       }
+                     }
+
+                     textarea {
+                       border: 1px solid #e0e0e0;
+                       height: 200px;
+                       background-color: #fbfbfb;
+
+                       &:focus {
+                         border: 1px solid #343538;
+                       }
+                     }
+                   }
                 }
             }
         }
@@ -653,15 +760,9 @@
         }
     }
     &.col-md-6 {
-        padding-left: 15px;
-        padding-right: 15px;
         &.is-affixed {
             padding-left: 0px;
             padding-right: 0px;
-            & .inner-wrapper-sticky {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
         }
     }
 }
