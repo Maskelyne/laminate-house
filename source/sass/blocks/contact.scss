@@ -80,9 +80,45 @@
   .contact-from-2 {
     margin: 30px 0 0 0;
     max-width: 600px;
+    position: relative;
 
     @media(max-width: 991px) {
       margin: 30px auto 0 auto;
+    }
+
+    .form-messege {
+      padding: 13px 15px;
+      gap: 0 5px;
+      align-items: center;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 90px;
+      right: 150px;
+      z-index: 10;
+      display: none;
+
+      @include mobile-width {
+        right: 10px;
+      }
+
+      &::before {
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background-image: url("../img/svg/element-mail.svg");
+        background-repeat: no-repeat;
+        background-size: 270px;
+        z-index: -1;
+      }
+
+      img {
+        max-width: 27px;
+      }
     }
 
     form {

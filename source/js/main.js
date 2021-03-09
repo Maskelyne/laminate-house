@@ -12,6 +12,7 @@ import {ymap} from "./modules/ymap";
 import {forms} from "./modules/forms";
 import {main} from "./modules/main.js";
 import {vendors} from "./modules/vendors";
+import {jqueryForm} from "./modules/jquery-form";
 
 swiper();
 inputmask();
@@ -20,3 +21,4 @@ ymap();
 forms();
 main();
 vendors();
+jqueryForm();
