@@ -23,7 +23,7 @@
   <div class="contact-area contact-area-mrg">
     <div class="contact-page-map">
       <div id="contact-2">
-        <div class="ymap-container" style="background-image: url('assets/img/ymap/yandex-before.jpg');">
+        <div class="ymap-container" style="background-image: url('assets/img/ymap/yandex-before.png');">
           <div class="loader loader-default"></div>
           <div id="map-yandex"></div>
         </div>
@@ -86,7 +86,7 @@
                     <input name="first_name" type="text" placeholder="Ваше имя">
                   </div>
                   <div class="col-lg-12 col-md-12 col-12">
-                    <input name="phone" type="text" placeholder="Номер телефона">
+                    <input id="tel" name="phone" type="text" placeholder="Номер телефона">
                   </div>
                   <div class="col-lg-12 col-md-12 col-12">
                     <textarea name="message" placeholder="Введите сообщение"></textarea>
@@ -96,49 +96,17 @@
                   </div>
                 </div>
               </form>
-              <p class="form-messege"></p>
+              <p class="form-messege">
+                <img src="assets/img/svg/icon-mail.svg" width="27" height="27" alt="Сообщение отправлено!">
+                Сообщение отправлено!
+              </p>
             </div>
-
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid pl-125">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-5 col-md-12">
-
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-<!-- All JS is here
-============================================ -->
-
-<!--&lt;!&ndash; jQuery JS &ndash;&gt;-->
-<!--<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>-->
-<!--&lt;!&ndash; Popper JS &ndash;&gt;-->
-<!--<script src="assets/js/popper.min.js"></script>-->
-<!--&lt;!&ndash; Bootstrap JS &ndash;&gt;-->
-<!--<script src="assets/js/bootstrap.min.js"></script>-->
-<!--&lt;!&ndash; Plugins JS &ndash;&gt;-->
-<!--<script src="assets/js/plugins.js"></script>-->
-<!--&lt;!&ndash; Ajax Mail &ndash;&gt;-->
-<!--<script src="assets/js/ajax-mail.js"></script>-->
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGM-62ap9R-huo50hJDn05j3x-mU9151Y"></script>-->
-<!--<script src="assets/js/map-3.js"></script>-->
-<!--&lt;!&ndash; Main JS &ndash;&gt;-->
-<!--<script src="assets/js/main.js"></script>-->
-
-
 
 @include('components/footer.html')
 @include('general/scripts.html')

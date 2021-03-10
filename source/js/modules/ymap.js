@@ -7,7 +7,7 @@ export function ymap () {
   function init () {
     var myMapTemp = new ymaps.Map("map-yandex", {
       center: [53.960639, 27.544116], // координаты центра на карте
-      zoom: 14, // коэффициент приближения карты
+      zoom: 18, // коэффициент приближения карты
       controls: ['zoomControl', 'fullscreenControl']
     });
     var myPlacemarkTemp = new ymaps.Placemark([53.960639, 27.544116], {
@@ -24,6 +24,7 @@ export function ymap () {
       // её "ножки" (точки привязки).
       iconImageOffset: [-25, -50],
     });
+    myMapTemp.behaviors.disable('scrollZoom');
     myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту
 
     // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции

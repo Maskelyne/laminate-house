@@ -75,22 +75,59 @@
     font-size: 16px;
     line-height: 20px;
     color: #343538;
-    opacity: 0.8;
   }
 
   .contact-from-2 {
     margin: 30px 0 0 0;
     max-width: 600px;
+    position: relative;
 
     @media(max-width: 991px) {
       margin: 30px auto 0 auto;
+    }
+
+    .form-messege {
+      padding: 13px 15px;
+      gap: 0 5px;
+      align-items: center;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 90px;
+      right: 150px;
+      z-index: 10;
+      display: none;
+
+      @include mobile-width {
+        right: 10px;
+      }
+
+      &::before {
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background-image: url("../img/svg/element-mail.svg");
+        background-repeat: no-repeat;
+        background-size: 270px;
+        z-index: -1;
+      }
+
+      img {
+        max-width: 27px;
+      }
     }
 
     form {
       input, textarea {
         border: 1px solid #E0E0E0;
         height: 50px;
-        font-size: 12px;
+        font-family: $Geometria;
+        font-size: 16px;
+        line-height: 25px;
         padding: 2px 15px;
         color: #8a8a8a;
         margin-bottom: 20px;
@@ -100,8 +137,6 @@
         &::placeholder {
           color: #343538;
           opacity: 0.5;
-          font-size: 16px;
-          line-height: 20px;
         }
 
         &:focus {
@@ -110,9 +145,7 @@
       }
 
       textarea {
-        &::placeholder {
-          padding-top: 10px;
-        }
+        padding-top: 10px;
       }
 
       & button.submit {
@@ -131,6 +164,19 @@
 
       textarea {
         height: 130px;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill,
+      textarea:-webkit-autofill,
+      select:-webkit-autofill, {
+        border: 1px solid #E0E0E0;
+        font-family: $Geometria;
+        font-size: 16px;
+        line-height: 25px;
+        -webkit-text-fill-color: #8a8a8a;
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        transition: background-color 5000s ease-in-out 0s;
       }
     }
   }
@@ -282,8 +328,6 @@
 
 .contacts__requisites {
   padding-top: 30px;
-  margin-top: 30px;
-  border-top: 1px solid #E25F27;
   max-width: 640px;
   @media(max-width: 991px) {
   max-width: unset;

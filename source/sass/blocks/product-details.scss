@@ -4,6 +4,28 @@
   padding: 0;
 }
 
+.product-order .comparison.added .comparison-remove, .comparison.added.can_compare .comparison-go, .comparison.added.can_compare .comparison-total {
+    display: flex;
+    gap: 0 5px;
+    align-items: center;
+    border: none;
+
+    span {
+      color: $Gray-rgba;
+    }
+}
+
+.product-order .comparison .comparison-add {
+  display: flex;
+  gap: 0 5px;
+  align-items: center;
+  border: none;
+
+  span {
+    color: $Gray-rgba;
+  }
+}
+
 .product-details-content {
   @include mobile-width {
     padding: 0 15px;
@@ -49,60 +71,45 @@
       }
     }
 
-    a {
-      display: flex;
-      gap: 0 5px;
-      align-items: center;
-
-      span {
-        color: $Gray-rgba;
-      }
-    }
-
-    &.pre-order {
-      span:first-child {
-        font-family: Geometria,arial,sans-serif;
-        font-size: 16px;
-        line-height: 25px;
-        color: #be0e0e;
-        position: relative;
-        max-width: 120px;
-        padding-left: 20px;
-
-        &::before {
-          width: 13px;
-          height: 20px;
-          position: absolute;
-          content: "";
-          top: 4px;
-          left: 0;
-          background-image: url("../img/svg/icon-pen.svg");
-          background-repeat: no-repeat;
-        }
-      }
-    }
-    &.in-stock {
+    .pre-order {
+      font-family: Geometria,arial,sans-serif;
+      font-size: 16px;
+      line-height: 25px;
+      color: #be0e0e;
       position: relative;
+      max-width: 120px;
+      padding-left: 20px;
 
-      span:first-child {
-        font-family: Geometria,arial,sans-serif;
-        font-size: 16px;
-        line-height: 25px;
-        position: relative;
-        max-width: 120px;
-        padding-left: 20px;
-        color: #06714a;
+      &::before {
+        width: 13px;
+        height: 20px;
+        position: absolute;
+        content: "";
+        top: 4px;
+        left: 0;
+        background-image: url("../img/svg/icon-pen.svg");
+        background-repeat: no-repeat;
+      }
+    }
+    .in-stock {
+      position: relative;
+      font-family: Geometria,arial,sans-serif;
+      font-size: 16px;
+      line-height: 25px;
+      position: relative;
+      max-width: 120px;
+      padding-left: 20px;
+      color: #06714a;
 
-        &::before {
-          width: 13px;
-          height: 15px;
-          position: absolute;
-          content: "";
-          top: 5px;
-          left: 0;
-          background-image: url("../img/svg/icon-check.svg");
-          background-repeat: no-repeat;
-        }
+      &::before {
+        width: 13px;
+        height: 15px;
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 0;
+        background-image: url("../img/svg/icon-check.svg");
+        background-repeat: no-repeat;
       }
     }
 
@@ -229,19 +236,40 @@
       margin-bottom: 15px;
     }
 
-    span:first-child {
-      font-family: $Geometria-Bold;
-      font-size: 20px;
-      line-height: 25px;
-      color: rgba(206, 0, 0, 0.8);
+    span {
+      &:first-child {
+        font-family: $Geometria-Bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: rgba(206, 0, 0, 0.8);
 
-      @include tablet-width {
-        font-size: 18px;
-        line-height: 20px;
+        @include tablet-width {
+          font-size: 20px;
+          line-height: 22px;
+        }
+
+        &::before {
+          display: none;
+        }
       }
 
-      &::before {
-        display: none;
+
+      &:last-child {
+        font-family: $Geometria;
+        font-size: 20px;
+        line-height: 25px;
+        color: rgba(52, 53, 56, 0.7);
+        position: relative;
+
+        &::before {
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          content: "";
+          top: 14px;
+          left: 0;
+          background-color: rgba(52, 53, 56, 0.7);
+        }
       }
     }
   }
@@ -577,6 +605,7 @@
                     }
                     .review-top-wrap {
                         display: flex;
+                        align-items: center;
                         justify-content: space-between;
 
                       @include tablet-width {
@@ -882,54 +911,6 @@
     }
 }
 
-
-.threesixty-area {
-    position: relative;
-    .threesixty {
-        height:auto !important;
-    }
-    .threesixty_images {
-        li {
-            &:first-child {
-                img {
-                    position: static !important;
-                    width: 100% !important;
-                }
-            }
-            img {
-                transition: all .0s ease 0s;
-
-            }
-        }
-    }
-    .threesixty-control {
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: flex;
-        align-items: center;
-        @media #{$xs-layout} {
-            top: -15px;
-        }
-        a {
-            font-size: 30px;
-            color: #333;
-            margin: 0 2px;
-        }
-    }
-}
-#threesixty-area .threesixty .threesixty_images img.current-image {
-	@media #{$xs-layout} {
-
-    }
-}
-
-#threesixty-area {
-    @media #{$xs-layout} {
-        margin-right: 0;
-    }
-}
-
 .product-details-content.quickview-content.threesixty-content.pl-30 {
     @media #{$xs-layout} {
         padding-left: 0;
@@ -939,9 +920,54 @@
     }
 }
 
+.form-group .ec-rating-stars span,
+.form-group .ec-stars,
+.form-group .ec-stars span {
+  background-image: url("../img/svg/icon-stars.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -21px;
+}
 
+.form-group .ec-rating-stars span {
+  width: 20px;
+  height: 23px;
+  margin-right: 5px;
+}
 
+.form-group .ec-rating-stars span.active-disabled {
+  background-position: 0 -21px;
+}
 
+.review-top-wrap .ec-stars,
+.review-top-wrap .ec-stars span {
+  background-image: url("../img/svg/icon-stars.svg");
+  height: 20px;
+}
 
+.review-top-wrap .ec-stars {
+  width: 110px;
+  height: 20px;
+  background-position: 0 -22px;
+}
+
+.review-top-wrap .ec-stars span.rating-1 {
+  width: 22px;
+}
+
+.review-top-wrap .ec-stars span.rating-2 {
+  width: 44px;
+}
+
+.review-top-wrap .ec-stars span.rating-3 {
+  width: 66px;
+}
+
+.review-top-wrap .ec-stars span.rating-4 {
+  width: 89px;
+}
+
+.review-top-wrap .ec-stars span.rating-5 {
+  width: 110px;
+}
 
 
